@@ -1,16 +1,74 @@
-
-body, html {
+body{
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* 3. Estilo del Menú de Navegación */
+header {
+    position: absolute; /* Para que flote sobre la imagen */
+    top: 0;
+    width: 100%;
+    background-color: rgb(7, 1, 166); /* Fondo negro semitransparente */
+}
+
+/*este es el estilo del icono*/
+.icono_sitio {
+    width: 70px;
+    height: auto;
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none; /* Quita los puntitos de la lista */
+    display: flex; /* Pone los elementos uno al lado del otro */
+    justify-content: left;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;/* Evita que los elementos se salgan de la barra */
+    padding: 10px 20px;
+    
+} 
+
+nav li {
+    margin: 0 20px;
+}
+
+.menu1{
+    
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu2{
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ul1{
+    list-style: none; /* Quita los puntitos de la lista */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 65px;
+}
+.nav1{
+    height: 185vh; 
+}
 
 main {
-    background-color: rgba(0, 0, 0, 0.5);    
+    background-color: rgba(0, 0, 0, 0.5);  
     background-size: cover;
     background-position: center;
-    height: 100vh; 
+    
     
     /* para centrar el texto vertical y horizontalmente */
     display: flex;
@@ -20,44 +78,8 @@ main {
     color: white;
 }
 
-/* 3. Estilo del Menú de Navegación */
-header {
-    position: absolute; /* Para que flote sobre la imagen */
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente */
-}
-/*este es el estilo del icono*/
-.icono_sitio {
-    width: 50px;
-    height: auto;
-    float: left;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none; /* Quita los puntitos de la lista */
-    display: flex; /* Pone los elementos uno al lado del otro */
-    justify-content: right;
-    margin: 0;
-    padding: 20px;
-    overflow: hidden;/* Evita que los elementos se salgan de la barra */
-    padding: 10px 20px;
-}
-
-nav li {
-    margin: 0 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 nav a:hover {
-    color: #fc801b; /* Color que cambia le pasamos el mouse */
+    color: #1ba6fc; /* Color que cambia le pasamos el mouse */
 }
 
 /* 4. Estilo del texto y botón central */
