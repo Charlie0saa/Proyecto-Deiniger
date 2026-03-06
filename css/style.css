@@ -1,0 +1,109 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.5);    
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    
+    /* para centrar el texto vertical y horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* 3. Estilo del Menú de Navegación */
+header {
+    position: absolute; /* Para que flote sobre la imagen */
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente */
+}
+/*este es el estilo del icono*/
+.icono_sitio {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none; /* Quita los puntitos de la lista */
+    display: flex; /* Pone los elementos uno al lado del otro */
+    justify-content: right;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;/* Evita que los elementos se salgan de la barra */
+    padding: 10px 20px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fc801b; /* Color que cambia le pasamos el mouse */
+}
+
+/* 4. Estilo del texto y botón central */
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+/*el boton que dice ver mas , se puede usar en otros botones*/
+button {
+    background-color: #fc801b;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilo del Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Contenedor principal del Título y Boton */
+#contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Contenedor de informacióndel Párrafo inferior */
+#parrafo_principal {
+    text-align: center;
+    padding: 15px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
