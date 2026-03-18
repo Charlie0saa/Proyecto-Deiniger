@@ -1,7 +1,7 @@
 /* Jon*/
 #fondo_portada{  
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(54, 52, 52, 0.3)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(54, 52, 52, 0.4)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
     background-size: cover;/* La imagen cubre toda la pantalla sin deformarse */
     background-repeat: no-repeat;/* No deja que la imagen se repita como mosaico */
     background-attachment: fixed;/* La imagen se queda quieta mientras haces scroll */
@@ -34,7 +34,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 50px;
     width: 80px;
     height: 80px;
