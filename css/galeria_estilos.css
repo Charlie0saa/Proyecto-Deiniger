@@ -1,0 +1,87 @@
+/*contenedor pricipal de la galeria*/
+.contenedor_galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 fotos por fila */
+  gap: 20px;
+  width: 80%; 
+  margin: 50px auto; 
+}
+
+.tarjeta_foto {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden; /* para mantener el zoom dentro del cuadro */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/*efecto Zoom  para las fotos*/
+.foto_contenedor {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease; /*animacion de la imagen */
+}
+
+/*efecto hover para que  la imagen crezca un poco */
+.tarjeta_foto:hover .foto_contenedor {
+  transform: scale(1.1); /* Efecto de enfoque para resaltar la imagen  */
+
+}
+
+/* 3. listado de las fotos */
+#foto_1 { background-image: url('../img/entrada1.png'); }
+#foto_2 { background-image: url('../img/entrada3.jpg'); }
+#foto_3 { background-image: url('../img/juegos1.jpg'); }
+#foto_4 { background-image: url('../img/entrada4.jpg'); }
+#foto_5 { background-image: url('../img/actividades1.jpg'); }
+#foto_6 { background-image: url('../img/centro1.png'); }
+#foto_7 { background-image: url('../img/centro2.png'); }
+#foto_8 { background-image: url('../img/guia1.jpg'); }
+#foto_9 { background-image: url('../img/cueva1.png'); }
+#foto_10 { background-image: url('../img/cueva2.jpg'); }
+#foto_11 { background-image: url('../img/escalar1.jpg'); }
+#foto_12 { background-image: url('../img/rapel.jpg'); }
+#foto_13 { background-image: url('../img/camping.jpg'); }
+#foto_14 { background-image: url('../img/obstaculos1.jpg'); }
+#foto_15 { background-image: url('../img/mirador1.jpg'); }
+#foto_16 { background-image: url('../img/nacimiento1.jpg'); }
+
+
+
+.info_texto {
+  padding: 15px;
+  text-align: center;
+  background: white;
+  z-index: 5;
+}
+
+/* Activa el diseño de pantalla completa al seleccionar una imagen */
+.pantalla_completa {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none; /* Oculto por defecto para que no se abra al iniciar la galeria */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pantalla_completa:target { display: flex; } /* para que la imagen se muestre en pantalla completa */
+
+.pantalla_completa img {
+  max-width: 85%;
+  max-height: 85%;
+  border: 4px solid white;
+}
+
+.boton_cerrar {
+  position: absolute;
+  top: 20px; right: 40px;
+  color: white;
+  font-size: 60px;
+  text-decoration: none;
+}
