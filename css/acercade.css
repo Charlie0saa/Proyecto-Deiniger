@@ -62,3 +62,30 @@ footer {
     
 }
 
+.pregunta{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tarjeta_historia {
+  /* Color blanco muy transparente */
+  background: rgba(255, 255, 255, 0.15); 
+  
+  /* El efecto "polarizado" o desenfoque de lo que está detrás */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+  
+  /* Bordes redondeados y estilo de tarjeta */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Un borde sutil para definir la forma */
+  
+  /* Espaciado y sombra */
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  /* Ajustes de texto */
+  color: white;
+  max-width: 85%; /* Para que no se estire demasiado en pantallas grandes */
+  margin: 20px auto;
+}
