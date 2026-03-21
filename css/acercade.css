@@ -41,8 +41,14 @@ header {
     z-index: 5;
 }
 /*x*/
-
-
+#contenedor_icono{
+    flex-direction: column;
+}
+ul {
+    list-style: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Elimina el padding predeterminado de las listas */
+    margin: 0; /* Elimina el margen predeterminado de las listas */
+}
 
 /*Jon*/
 footer {
