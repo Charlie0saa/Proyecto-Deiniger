@@ -1,0 +1,189 @@
+/* Jon*/
+#fondo_portada{  
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(54, 52, 52, 0.4)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
+    background-size: cover;/* La imagen cubre toda la pantalla sin deformarse */
+    background-repeat: no-repeat;/* No deja que la imagen se repita como mosaico */
+    background-attachment: fixed;/* La imagen se queda quieta mientras haces scroll */
+    background-position: center;/* Centra la imagen siempre */
+
+    min-height: 100vh;            /* Asegura que el fondo cubra al menos el 100% del alto de la pantalla */
+    font-family: 'Tahoma', sans-serif;
+
+}
+
+header {
+    top: 0; /* top: 0: Pega el elemento exactamente al borde superior de la ventana */
+    width: 100%; /* width: 100%: Hace que el menú ocupe todo el ancho horizontal de la pantalla */
+    background-color: rgba(14, 61, 27, 0.7); /* Azul del parque con transparencia */
+    /*position: fixed; /*te va a seguir la barra de navegacion al bajar*/
+    position: static; /*te va a seguir la barra de navegacion al bajar*/
+    /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+    z-index: 10; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+}
+
+
+#contenedor_icono {
+    padding-top: 75px; /*espacio entre el titulo y la barra*/
+    padding-bottom: 200px; /* padding-bottom: 50px: Deja un espacio de "respiro" antes de llegar al footer */
+}
+#contenedor_icono::before {
+    content: "";
+    background-image: url('../img/iconosurfcity3.png'); /* le cambie la imagen anterior por una nueva*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    z-index: 5;
+}
+
+
+
+
+/*Marcos*/
+.creadores {
+    padding: 50px 200px;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creadores h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 50px;
+    letter-spacing: 25px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* --- CONTENEDOR DE TARJETAS (GRID) --- */
+.contenedor-tarjetas {
+    display: grid;
+    /* Crea columnas automáticas de mínimo 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /*25*/ 
+    width: 50%;
+    max-width: 1100px;
+    justify-items: center;
+}
+
+/* --- ESTILO DE CADA TARJETA --- */
+.jon, .pao, .marco, .charlie,.cris {
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(12px); /* Efecto desenfoque */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 35px 50px; /*35 y 20*/
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    flex-direction: column;   
+    gap: 10px; 
+}
+
+/* Efecto al pasar el mouse */
+.jon:hover {
+    border-color: #2e7d32; /* Verde temático del parque */
+}
+.pao:hover {
+    border-color: #9024ca; /* Verde temático del parque */
+}
+.marco:hover {
+    border-color: #e04542; /* Verde temático del parque */
+}
+.charlie:hover {
+    border-color: #27eeea; /* Verde temático del parque */
+}
+.cris:hover {
+    border-color: #d8f424; /* Verde temático del parque */
+}
+
+/* --- ICONOS Y TEXTO --- */
+.icono-usuario {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cris h2 {
+    font-size: 1rem;
+    color: #fff;
+    /*margin-bottom: 10px;
+    line-height: 1.3; /*1.3*/
+    margin: 0;              
+    text-align: center;
+}
+.charlie h2 {
+    font-size: 1rem;
+    color: #fff;
+    /*margin-bottom: 10px;
+    line-height: 1.3; /*1.3*/
+    margin: 0;              
+    text-align: center;
+}
+.marco h2 {
+    font-size: 1rem;
+    color: #fff;
+    /*margin-bottom: 10px;
+    line-height: 1.3; /*1.3*/
+    margin: 0;              
+    text-align: center;
+}
+.pao h2 {
+    font-size: 1rem;
+    color: #fff;
+    /*margin-bottom: 10px;
+    line-height: 1.3; /*1.3*/
+    margin: 0;              
+    text-align: center;
+}
+.jon h2 {
+    font-size: 1rem;
+    color: #fff;
+    /*margin-bottom: 10px;
+    line-height: 1.3; /*1.3*/
+    margin: 0;              
+    text-align: center;
+}
+
+.carne {
+    font-size: 0.95rem;
+    color: #a5d6a7; /* Verde clarito para el carné */
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+
+
+
+
+/*Jon*/
+footer {
+    background-color: rgba(14, 61, 27,0.4); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 30px;
+    width: 100%;
+    font-size: 1em;
+    
+}
