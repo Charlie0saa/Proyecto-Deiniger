@@ -11,11 +11,12 @@ body{
 }
 /* esta es la imagen de fondo solo de la portada*/
 #fondo_portada{  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(54, 52, 52, 0.4)), url('../img/portada.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    
 
 }
 /* 3. Estilo del Menú de Navegación */

@@ -54,7 +54,7 @@
 .info_texto {
   padding: 15px;
   text-align: center;
-  background: white;
+  background: rgb(1, 65, 38);
   z-index: 5;
 }
 
@@ -70,7 +70,8 @@
   z-index: 1000;
 }
 
-.pantalla_completa:target { display: flex; } /* para que la imagen se muestre en pantalla completa */
+.pantalla_completa:target { display: flex; /* para que la imagen se muestre en pantalla completa */
+} 
 
 .pantalla_completa img {
   max-width: 85%;
@@ -84,4 +85,5 @@
   color: white;
   font-size: 60px;
   text-decoration: none;
+
 }
