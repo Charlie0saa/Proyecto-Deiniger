@@ -1,0 +1,36 @@
+.redes{
+    display: flex;
+    flex-direction: column; /* posiciona */
+    align-items: flex-start;
+    gap: 30px; /* espacio entre imágenes */
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.redes h2{
+    margin-left: 15px;
+    margin-right: auto;
+
+}
+
+.redes img{
+    width: 75px; /* tamaño */
+    height: 75px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.redes img:hover{
+    transform: scale(1.2); /* efecto al pasar mouse */
+}
+.info{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.info h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
