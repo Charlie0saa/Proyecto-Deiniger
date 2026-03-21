@@ -69,13 +69,7 @@ footer {
 }
 
 .tarjeta_historia {
-  /* Color blanco muy transparente */
-  background: rgba(255, 255, 255, 0.15); 
-  
-  /* El efecto "polarizado" o desenfoque de lo que está detrás */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
-  
+ 
   /* Bordes redondeados y estilo de tarjeta */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2); /* Un borde sutil para definir la forma */
