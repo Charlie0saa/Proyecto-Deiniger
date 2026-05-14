@@ -10,65 +10,61 @@ body{
      
 }
 /* esta es la imagen de fondo solo de la portada*/
-#fondo_portada{  
+#fondo_portada{ 
+    
+    background-color: white;
+    /*
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    */
     
 
 }
 /* 3. Estilo del Menú de Navegación */
 header {
     position: absolute; /* Para que flote sobre la imagen */
-    top: 0;
+    top: 0px; /* Ajusta según el espacio que quieras desde la parte superior */
     width: 100%;
-    background-color: rgb(14, 61, 27, 0.7); 
+    background-color: rgba(255, 255, 255, 0.7); 
 }
 
-/*este es el estilo del icono*/
-#contenedor_icono {
-    position: relative;
-    padding-left: 70px;
-    min-height: 60px;
-}
 
-#contenedor_icono::before {
-    content: "";
-    background-image: url('../img/iconosurfcity3.png');
+.logo{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 10px;
+    left: 55px;
     width: 80px;
     height: 80px;
     z-index: 5;
 }
 
-
 nav ul {
     list-style: none; /* Quita los puntitos de la lista */
     display: flex; /* Pone los elementos uno al lado del otro */
     justify-content: left;
+   
     margin: 0;
     padding: 20px;
     overflow: hidden;/* Evita que los elementos se salgan de la barra */
-    padding: 10px 20px;
+    padding: 25px 300px;
     
 } 
 
 nav li {
-    margin: 0 20px;
+    margin: 10px 13px; /* Espacio entre los elementos del menú */
 }
 
 .menu1{
     
-    font-family: Arial;
+    font-family:'Calibri Light';
     font-size: 15px;
-    color: white;
+    color: rgb(7, 87, 7);
     text-decoration: none;
     font-weight: bold;
     position: relative;/* JS.IMPORTATE: agregué este apartado porque no funcionaban los enlaces a otras paginas*/
@@ -103,22 +99,45 @@ nav a:hover {
 /* 4. Estilo del texto y botón central */
 
 .estilo_titulos {
-    color: #ffffff; 
-    font-family: 'Arial', sans-serif; 
-    font-size: 3rem; 
-    text-align: center;
+    color: rgb(7, 87, 7);
+    font-family: 'Bodoni Moda';  
     text-transform: uppercase; 
-    letter-spacing: 2px; 
-    text-shadow: 3px 3px 10px rgba(0, 56, 147, 0.8);  
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 50px;
+    text-align: left;
+    width: 40%;
+    font-size: 3rem;
+    
+    
+}
+.contenedor_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 120px auto;
+
     padding: 10px;
 }
+.imgtitulo{
+    width: 60%;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.imgtitulo2{
+    width: 40%;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
 
 /*estilo para los botones*/
 button {
-    background-color: #1013cc;
+    background-color: rgb(225, 208, 133, 0.6);
     border: none;
-    color: #fff;
+    color: rgb(7, 87, 7);
     padding: 12px 25px;
     font-size: 1rem;
     cursor: pointer;
@@ -126,27 +145,117 @@ button {
     font-weight: bold;
 }
 button:hover{
-    background-color: #1ba6fc;
+    background-color: #e34c006f;
 }
 
 /* Estilo del Footer */
 footer {
-    background-color: rgb(14, 61, 27,0.4); 
-    color: white;
+    background-color: rgba(196, 195, 195, 0.6); 
+    color: rgb(7, 87, 7);
     text-align: center;
-    padding: 20px;
-    height: 30px;
-    width: auto;
+    width: 100%; /* Asegura que cubra todo el ancho */
+    padding: 10px 0; /* Aumentamos el padding para dar espacio */
+    height: auto; /* IMPORTANTE: Quitamos los 30px fijos */
     font-size: 1em;
+    display: flex;
+    flex-direction: column; /* Pone iconos arriba y texto abajo */
+    align-items: center;    /* Centra horizontalmente */
+    justify-content: center;
+    text-align: center;     /* Asegura que el texto se alinee al centro */
+}
+
+.footer-redes {
+    margin-bottom: 10px; /* Separa los iconos del texto de abajo */
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Espacio uniforme entre iconos */
+}
+
+.footer-redes a {
+    color: rgb(7, 87, 7);
+    font-size: 2rem; 
+   
+}
+
+footer p {
+    font-size: 0.6rem;
     
+    margin: 0 auto;
+    max-width: 90%; /* Evita que el texto toque los bordes */
 }
 /* Contenedor de informacióndel Párrafo inferior */
 #parrafo_principal {
     text-align: center;
     padding: 15px;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    color: #fff;
+    color: rgb(7, 87, 7);
     font-size: 30px;
     margin-left: 10%;
     margin-right: 10%;
 }
+
+/*CHARLIE*/
+/*DISEÑO ADAPTATIVO --PC*/
+
+*{
+    font-family: 'Trebuchet MS',Helvetica, sans-serif;
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+/*DISEÑO PARA ---CELULARES*/
+
+@media screen and (max-width: 480px){
+    html{
+        font-size: 14px;
+    }
+    body{
+        background-color: #03a9f4;
+    }
+    div{
+        width: 95%;
+    }
+}
+/*DISEÑO PARA ---TABLETS*/
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    html{
+        font-size: 15px;
+    }
+    body{
+        background-color: #ff9800;
+    }
+    div{
+        width: 85%;
+    }
+}
+@keyframes zoomRevelador {
+    0% {
+        opacity: 0;
+        transform: scale(0.2); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+.imgtitulo {
+    animation: zoomRevelador 1s ease-out forwards;
+}
+#contenedor_icono {
+    padding-bottom: 80px; /* Crea espacio interno antes del footer */
+}
+
+/* O directamente al botón */
+button {
+    margin-bottom: 50px; /* Empuja el footer hacia abajo */
+}
+/*CHARLIE*/

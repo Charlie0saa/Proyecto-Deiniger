@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="css\inicio.css">
     <!--libreria de iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,28 +12,35 @@
     -jonathan solis SC262227
     -Paola Valdéz VR261803
     -Marcos ayala AP260351
-    -Carlos Azucena AA260854-->
+    -Carlos Azucena AA260854
+    -Cristian Menjivar LM260115
+    -->
 
 <body id="fondo_portada">
-
+ 
     <!-- Menú de Navegacion -->
     <header>
-        <nav>          
+        <nav>   
+            <img src="img\iconosurfcity3.png" class="logo">       
             <ul>
-                <li><a class="menu1" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a class="menu1" href="acerca_de.html"><i class="fa-solid fa-circle-info"></i> Acerda de</a></li>
-                <li><a class="menu1" href="galeria.html"><i class="fa-solid fa-image"></i> Galeria</a></li>
-                <li><a class="menu1" href="redes_sociales.html"><i class="fa-brands fa-instagram"></i> redes Sociales</a></li>
-                <li><a class="menu1" href="contactos.html"><i class="fa-solid fa-envelope"></i> Contactos</a></li>
-                <li><a class="menu1" href="creadores.html"><i class="fa-solid fa-users"></i> Creadores</a></li>
-                <li><a class="menu1" href="formulario.html"><i class="fa-solid fa-file-lines"></i> Formulario</a></li>
+                <li><a class="menu1" href="index.html"> Inicio</a></li>
+                <li><a class="menu1" href="acerca_de.html"> Historia</a></li>
+                <li><a class="menu1" href="galeria.html"> Galeria</a></li>
+                <li><a class="menu1" href="contactos.html"> Contactos</a></li>
+                <li><a class="menu1" href="creadores.html"> Creadores</a></li>
             </ul>
         </nav>
     </header>
     <!-- Seccion Principal -->
     <main id="contenedor_icono">
         <section>
-            <p class="estilo_titulos">Descubre el Parque de aventuras surf city walter thilo deininger</p>
+            <div class="contenedor_titulo">
+                <img src="img\portada.jpg" class="imgtitulo">
+                <p class="estilo_titulos">
+                    DESCUBRE EL PARQUE DE AVENTURAS SURF CITY WALTER THILO DEININGER
+                </p>
+            </div>
+            <img src="img\Negativo con texto.png" class="imgtitulo2">
             <p id="parrafo_principal">
                 El Parque de Aventuras Walter Thilo Deininger es uno de los lugares turísticos más visitados 
                 en la zona de Surf City. Es el sitio perfecto si te gusta estar al aire libre, caminar por el bosque
@@ -46,10 +53,16 @@
     </main>
 
     <!-- aqui va el footer -->
-    <footer>
-        <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. 
-             Todos los derechos reservados. proyecto Lenguaje y marcado de diseño web</p>
-    </footer>
+   <footer>
+    <div class="footer-redes">
+        <a href="https://www.instagram.com/parquewtd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/parquewtd/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/surfcity" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@surfcity" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. <br> 
+       Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web</p>
+</footer>
     
 </body>
 </html>
