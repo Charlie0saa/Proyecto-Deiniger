@@ -98,3 +98,80 @@
     height: 100px;
     z-index: 5;
 }
+/*contenido de la tienda*/
+.contenedor_tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 85%;
+    margin: 50px auto;
+}
+
+.tarjeta_producto {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+}
+
+.foto_producto {
+    width: 160px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta_producto:hover .foto_producto {
+    transform: scale(1.1);
+}
+
+.info_producto {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    flex: 1;
+}
+
+.info_producto h3 {
+    font-size: 17px;
+    color: rgb(1, 65, 38);
+    margin-bottom: 8px;
+}
+
+.precio_producto {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn_carrito {
+    background-color: rgb(1, 65, 38);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn_carrito:hover {
+    background-color: rgb(0, 45, 25);
+}
+
+#regalo_1 { background-image: url('../img/regalo_camiseta.png'); }
+#regalo_2 { background-image: url('../img/regalo_gorra.png'); }
+#regalo_3 { background-image: url('../img/regalo_termo.png'); }
+#regalo_4 { background-image: url('../img/regalo_llavero.png'); }
+#regalo_5 { background-image: url('../img/regalo_taza.png'); }
+#regalo_6 { background-image: url('../img/regalo_cafe.png'); }
+#regalo_7 { background-image: url('../img/regalo_pulsera.png'); }
+#regalo_8 { background-image: url('../img/regalo_iman.png'); }
