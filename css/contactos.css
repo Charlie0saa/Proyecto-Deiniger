@@ -24,14 +24,10 @@ header {
 }
 
 
-#contenedor_icono {
-    padding-top: 75px; /*espacio entre el titulo y la barra*/
-    padding-bottom: 200px; /* padding-bottom: 50px: Deja un espacio de "respiro" antes de llegar al footer */
-}
+
 
 /*Charlie*/
-
-
+/* todo esto es del logo*/
 .logo2{
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,5 +39,129 @@ header {
     height: 100px;
     z-index: 5;
 }
+/*esta es del  titulo  de "contactanos"*/
+.contacto p{
+    color: rgb(7, 87, 7);
+    font-family: 'Bodoni Moda';  
+    text-transform: uppercase; 
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.info{
+    color: rgb(255, 255, 255);    
+    background-color: rgba(0,0,0,0.1); /* Fondo gris muy claro para que resalte */
+    border-radius: 60px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+}
+.info h3{
+    color: rgb(255, 255, 255);
+}
+.esetelefono{
+    font-family: 'Tahoma';
+    background-color: #14130c; /* Fondo gris muy claro para que resalte */
+    border-radius: 50px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 50%;
+    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+}
+.correo{
+    font-family: 'Tahoma';
+    background-color: #14130c; /* Fondo gris muy claro para que resalte */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 50%;
+    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+}
+.horarios{
+    font-family: 'Tahoma';
+    background-color: #14130c; /* Fondo gris muy claro para que resalte */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 50%;
+    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+}
+.ubicacion {
+    display: flex;
+    flex-direction: row;    /* Alinea mapa y formulario en fila */
+    
+    align-items: flex-start; /* Alinea ambos al inicio superior */
+    gap: 50px;              /* Espacio de separación entre ambos */
+    flex-wrap: wrap;        /* Si la pantalla es pequeña, se ponen uno abajo del otro */
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;      /* Evita que se estiren demasiado */
+
+}
+.mapa p{
+    color: rgb(7, 87, 7);
+    font-family: 'Bodoni Moda';  
+    text-transform: uppercase; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    font-size: 3rem;
+}
+
+.ubicacion iframe {
+    width: 100%;            /* Se adapta al tamaño del contenedor .ubicacion */
+    height: 400px;          /* Altura fija para que no sea eterno */
+    border-radius: 15px;    /* Bordes redondeados para que combine con el formulario */
+}
+.ubicacion {
+    flex: 1;                /* Toma la mitad del espacio */
+    min-width: 300px;
+    max-width: 550px;
+}
+
+iframe {
+    max-width: 100%; /* Evita que el mapa sea más ancho que su contenedor */
+    width: 100%;
+}
+/* Ajuste para el bloque de texto (Teléfono, Correo, Horarios) */
+.info {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    
+    gap: 20px;           /* Espacio entre cada div de info */
+}
+
+/* Estilo para los títulos dentro de la info para que se vean ordenados */
+.info h3 {
+    color: rgb(7, 87, 7);
+    margin-bottom: 5px;
+}
+
+/* Responsivo: Si la pantalla es pequeña, se pondrán uno abajo del otro */
+@media (max-width: 768px) {
+    .contacto-dos {
+        
+        align-items: center;
+    }
+}
+
 
 /*Jon*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Crucial para que el padding no sume ancho */
+}
+
+html, body {
+    overflow-x: hidden; /* Esto oculta la barra horizontal por seguridad */
+    width: 100%;
+}
