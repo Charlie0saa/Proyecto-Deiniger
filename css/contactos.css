@@ -22,12 +22,15 @@ header{
 
 /* LOGO */
 .logo2{
-    position:absolute; /* Permite mover el logo libremente */
-    top:5px; /* Distancia desde arriba */
-    left:50px; /* Distancia desde la izquierda */
-    width:190px; /* Ancho del logo */
-    height:100px; /* Alto del logo */
-    object-fit:contain; /* Evita deformación de imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    width: 190px;
+    height: 100px;
+    z-index: 5;
 }
 
 /* SECCIÓN TÍTULO */
@@ -41,7 +44,7 @@ header{
     color:rgb(7,87,7); /* Color verde oscuro */
     font-size:6rem; /* Tamaño grande del texto */
     letter-spacing:5px; /* Espaciado entre letras */
-    margin-bottom:310px; /* Separación inferior */
+    margin-bottom:280px; /* Separación inferior */
     font-family:'Bodoni Moda'; /* Fuente elegante */
 }
 

@@ -1,261 +1,693 @@
+/*
+   CONFIGURACIÓN GENERAL
+*/
+
 body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-     display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    margin: 0;
-     
-}
-/* esta es la imagen de fondo solo de la portada*/
-#fondo_portada{ 
-    
-    background-color: white;
-    /*
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    */
-    
+
+    margin:0; /* Elimina márgenes automáticos */
+
+    padding:0; /* Elimina espacios internos */
+
+    height:100%; /* Altura completa */
+
+    min-height:100vh; /* Altura mínima de toda la pantalla */
+
+    display:flex; /* Activa Flexbox */
+
+    flex-direction:column; /* Coloca elementos en columna */
+
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Fuente principal */
 
 }
-/* 3. Estilo del Menú de Navegación */
-header {
-    position: absolute; /* Para que flote sobre la imagen */
-    top: 0px; /* Ajusta según el espacio que quieras desde la parte superior */
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.7); 
+
+/*
+   FONDO PRINCIPAL
+ */
+
+#fondo_portada{
+
+    background-color:white; /* Fondo blanco */
 }
 
+/* 
+   HEADER
+ */
+
+header{
+
+    position:absolute; /* Flota sobre el contenido */
+
+    top:0; /* Pegado arriba */
+
+    width:100%; /* Ocupa todo el ancho */
+
+    background-color:rgba(255,255,255,0.7); /* Fondo transparente */
+
+}
+
+/* 
+   LOGO
+*/
 
 .logo{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 10px;
-    left: 55px;
-    width: 80px;
-    height: 80px;
-    z-index: 5;
+
+    position:absolute; /* Permite mover libremente */
+
+    top:10px; /* Distancia arriba */
+
+    left:55px; /* Distancia izquierda */
+
+    width:80px; /* Ancho logo */
+
+    height:80px; /* Alto logo */
+
+    background-size:contain; /* Ajusta imagen */
+
+    background-repeat:no-repeat; /* No repite imagen */
+
+    background-position:center; /* Centra imagen */
+
+    z-index:5; /* Prioridad visual */
+
 }
 
-nav ul {
-    list-style: none; /* Quita los puntitos de la lista */
-    display: flex; /* Pone los elementos uno al lado del otro */
-    justify-content: left;
-   
-    margin: 0;
-    padding: 20px;
-    overflow: hidden;/* Evita que los elementos se salgan de la barra */
-    padding: 25px 300px;
-    
-} 
+/*
+   MENÚ NAVEGACIÓN
+*/
 
-nav li {
-    margin: 10px 13px; /* Espacio entre los elementos del menú */
+nav ul{
+
+     list-style:none; /* Quita puntos */
+
+    display:flex; /* Pone menú horizontal */
+
+    justify-content:center; /* Centra opciones */
+
+    align-items:center; /* Centra vertical */
+
+    gap:35px; /* Espacio entre botones */
+
+    flex-wrap:nowrap; /* IMPIDE saltos de linea */
+
+    padding:25px 140px; /* Espacio interno */
+
+    margin:0; /* Elimina márgenes */
 }
 
+nav li{
+
+   white-space:nowrap; /* Evita que el texto se parta */
+
+}
+
+/* LINKS MENÚ */
 .menu1{
-    
-    font-family:'Calibri Light';
-    font-size: 15px;
-    color: rgb(7, 87, 7);
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;/* JS.IMPORTATE: agregué este apartado porque no funcionaban los enlaces a otras paginas*/
-    z-index: 999;/* esto permite que se muestresobre todos los elementos y contenedores*/
+
+     font-family:'Calibri Light';
+
+    font-size:15px;
+
+    color:rgb(7,87,7);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
 }
 
-.ul1{
-    list-style: none; /* Quita los puntitos de la lista */
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 65px;
-}
-.nav1{
-    height: 185vh; 
+/* EFECTO HOVER MENÚ */
+nav a:hover{
+
+    color:rgb(225,208,133); /* Cambia color al pasar mouse */
+
 }
 
-main { 
-    /* para centrar el texto vertical y horizontalmente */
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+/* 
+   MAIN
+*/
+
+main{
+
+    flex:1; /* Ocupa espacio restante */
+
+    display:flex; /* Flexbox */
+
+    justify-content:center; /* Centra horizontal */
+
+    align-items:center; /* Centra vertical */
+
+    text-align:center; /* Centra texto */
+
+    color:white; /* Texto blanco */
+
 }
 
-nav a:hover {
-    color: rgb(225, 208, 133); /* Color que cambia le pasamos el mouse */
+/* 
+   TITULOS
+*/
+
+.estilo_titulos{
+
+    width:40%; /* Ancho del título */
+
+    padding:50px; /* Espacio interno */
+
+    margin-top:10px; /* Espacio arriba */
+
+    margin-bottom:10px; /* Espacio abajo */
+
+    text-align:left; /* Texto izquierda */
+
+    text-transform:uppercase; /* Letras mayúsculas */
+
+    font-size:3rem; /* Tamaño grande */
+
+    font-family:'Bodoni Moda'; /* Fuente elegante */
+
+    color:rgb(7,87,7); /* Verde oscuro */
+
 }
 
-/* 4. Estilo del texto y botón central */
-
-.estilo_titulos {
-    color: rgb(7, 87, 7);
-    font-family: 'Bodoni Moda';  
-    text-transform: uppercase; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 50px;
-    text-align: left;
-    width: 40%;
-    font-size: 3rem;
-    
-    
-}
+/* CONTENEDOR TITULO */
 .contenedor_titulo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    width: 90%;
-    margin: 120px auto;
+    width:90%; /* Ancho */
 
-    padding: 10px;
+    margin:120px auto; /* Centra y separa */
+
+    padding:10px; /* Espacio interno */
+
+    display:flex; /* Flexbox */
+
+    align-items:center; /* Centra vertical */
+
+    justify-content:space-between; /* Separa elementos */
+
 }
+
+/* IMAGENES TITULO */
 .imgtitulo{
-    width: 60%;
-    border-radius: 2px;
-    margin-right: 20px;
+
+    width:60%; /* Tamaño imagen */
+
+    margin-right:20px; /* Espacio derecha */
+
+    border-radius:2px; /* Bordes leves */
+
+    animation:zoomRevelador 1s ease-out forwards; /* Animación */
+
 }
+
 .imgtitulo2{
-    width: 40%;
-    border-radius: 2px;
-    margin-right: 20px;
+
+    width:40%; /* Tamaño imagen */
+
+    margin-right:20px; /* Espacio derecha */
+
+    border-radius:2px; /* Bordes leves */
+
 }
 
+/* 
+   BOTONES
+*/
 
-/*estilo para los botones*/
-button {
-    background-color: rgb(225, 208, 133, 0.6);
-    border: none;
-    color: rgb(7, 87, 7);
-    padding: 12px 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
+button{
+
+    background-color:rgba(225,208,133,0.6); /* Fondo amarillo */
+
+    color:rgb(7,87,7); /* Texto verde */
+
+    border:none; /* Sin borde */
+
+    padding:12px 25px; /* Espacio interno */
+
+    border-radius:5px; /* Bordes redondos */
+
+    font-size:1rem; /* Tamaño texto */
+
+    font-weight:bold; /* Negrita */
+
+    cursor:pointer; /* Cursor mano */
+
+    margin-bottom:50px; /* Espacio abajo */
+
 }
+
+/* HOVER BOTÓN */
 button:hover{
-    background-color: #e34c006f;
+
+    background-color:#e34c006f; /* Cambia color */
+
 }
 
-/* Estilo del Footer */
-footer {
-    background-color: rgba(196, 195, 195, 0.6); 
-    color: rgb(7, 87, 7);
-    text-align: center;
-    width: 100%; /* Asegura que cubra todo el ancho */
-    padding: 10px 0; /* Aumentamos el padding para dar espacio */
-    height: auto; /* IMPORTANTE: Quitamos los 30px fijos */
-    font-size: 1em;
-    display: flex;
-    flex-direction: column; /* Pone iconos arriba y texto abajo */
-    align-items: center;    /* Centra horizontalmente */
-    justify-content: center;
-    text-align: center;     /* Asegura que el texto se alinee al centro */
+/* 
+   FOOTER
+ */
+
+footer{
+
+    width:100%; /* Todo el ancho */
+
+    padding:10px 0; /* Espacio interno */
+
+    background-color:rgba(196,195,195,0.6); /* Fondo gris */
+
+    color:rgb(7,87,7); /* Texto verde */
+
+    text-align:center; /* Centra texto */
+
+    display:flex; /* Flexbox */
+
+    flex-direction:column; /* Elementos verticales */
+
+    justify-content:center; /* Centra vertical */
+
+    align-items:center; /* Centra horizontal */
+
+    font-size:1em; /* Tamaño texto */
+
 }
 
-.footer-redes {
-    margin-bottom: 10px; /* Separa los iconos del texto de abajo */
-    display: flex;
-    justify-content: center;
-    gap: 25px; /* Espacio uniforme entre iconos */
+/* REDES SOCIALES */
+.footer-redes{
+
+    display:flex; /* Flexbox */
+
+    justify-content:center; /* Centra iconos */
+
+    gap:25px; /* Espacio entre iconos */
+
+    margin-bottom:10px; /* Espacio abajo */
+
 }
 
-.footer-redes a {
-    color: rgb(7, 87, 7);
-    font-size: 2rem; 
-   
+/* ICONOS */
+.footer-redes a{
+
+    color:rgb(7,87,7); /* Verde */
+
+    font-size:2rem; /* Tamaño iconos */
+
 }
 
-footer p {
-    font-size: 0.6rem;
-    
-    margin: 0 auto;
-    max-width: 90%; /* Evita que el texto toque los bordes */
-}
-/* Contenedor de informacióndel Párrafo inferior */
-#parrafo_principal {
-    text-align: center;
-    padding: 15px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: rgb(7, 87, 7);
-    font-size: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+/* TEXTO FOOTER */
+footer p{
+
+    margin:0 auto; /* Centra */
+
+    max-width:90%; /* Limita ancho */
+
+    font-size:0.6rem; /* Tamaño pequeño */
+
 }
 
-/*CHARLIE*/
-/*DISEÑO ADAPTATIVO --PC*/
+/* 
+   PÁRRAFO PRINCIPAL
+*/
+
+#parrafo_principal{
+
+    margin-left:10%; /* Espacio izquierda */
+
+    margin-right:10%; /* Espacio derecha */
+
+    padding:15px; /* Espacio interno */
+
+    text-align:center; /* Centra texto */
+
+    font-size:30px; /* Tamaño texto */
+
+    font-family:Georgia, Times, 'Times New Roman', serif; /* Fuente */
+
+    color:rgb(7,87,7); /* Verde */
+
+}
+
+/* 
+   ESTILOS GENERALES
+*/
 
 *{
-    font-family: 'Trebuchet MS',Helvetica, sans-serif;
+
+    font-family:'Trebuchet MS', Helvetica, sans-serif; /* Fuente general */
+
 }
+
 h1{
-    font-size: 2rem;
+
+    font-size:2rem; /* Tamaño títulos */
+
 }
+
 p{
-    font-size: 1rem;
-    text-align: justify;
+
+    font-size:1rem; /* Tamaño párrafos */
+
+    text-align:justify; /* Justifica texto */
+
 }
 
+/* =========================================
+   RESPONSIVE GENERAL PARA TODO EL SITIO
+========================================= */
 
-/*DISEÑO PARA ---CELULARES*/
+/* =========================
+   COMPUTADORAS GRANDES
+========================= */
+@media screen and (min-width:1025px){
 
-@media screen and (max-width: 480px){
-    html{
-        font-size: 14px;
-    }
     body{
-        background-color: #03a9f4;
+        font-size:16px; /* Tamaño normal */
     }
-    div{
-        width: 95%;
-    }
-}
-/*DISEÑO PARA ---TABLETS*/
 
+    nav ul{
+        padding:25px 300px; /* Espacio amplio menú */
+    }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    html{
-        font-size: 15px;
+    .contenedor_titulo{
+        flex-direction:row; /* Elementos horizontales */
     }
-    body{
-        background-color: #ff9800;
+
+    .info{
+        flex-direction:row; /* Tarjetas en fila */
     }
-    div{
-        width: 85%;
+
+    .contacto h1{
+        font-size:6rem; /* Título grande */
     }
-}
-@keyframes zoomRevelador {
-    0% {
-        opacity: 0;
-        transform: scale(0.2); 
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1); 
-    }
+
 }
 
-.imgtitulo {
-    animation: zoomRevelador 1s ease-out forwards;
-}
-#contenedor_icono {
-    padding-bottom: 80px; /* Crea espacio interno antes del footer */
+/* =========================
+   TABLETS
+========================= */
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    nav ul{
+
+        padding:20px 100px; /* Reduce espacio menú */
+
+        justify-content:center; /* Centra menú */
+
+        flex-wrap:wrap; /* Baja opciones */
+
+    }
+
+    .logo,
+    .logo2{
+
+        width:70px; /* Reduce logo */
+
+        height:70px;
+
+        left:20px;
+
+    }
+
+    .contenedor_titulo{
+
+        flex-direction:column; /* Imagen arriba y texto abajo */
+
+        text-align:center;
+
+    }
+
+    .estilo_titulos{
+
+        width:100%; /* Título ocupa todo */
+
+        text-align:center;
+
+        font-size:2.5rem;
+
+    }
+
+    .imgtitulo,
+    .imgtitulo2{
+
+        width:90%; /* Imagen más grande */
+
+        margin:20px auto;
+
+    }
+
+    .info{
+
+        flex-direction:column; /* Tarjetas verticales */
+
+        align-items:center;
+
+    }
+
+    .esetelefono,
+    .correo,
+    .horarios{
+
+        width:90%;
+
+    }
+
+    .mapa iframe{
+
+        height:400px; /* Reduce mapa */
+
+    }
+
+    .contenedor_formulario{
+
+        width:95%;
+
+        padding:40px;
+
+    }
+
+    .contacto h1{
+
+        font-size:4rem;
+
+    }
+
 }
 
-/* O directamente al botón */
-button {
-    margin-bottom: 50px; /* Empuja el footer hacia abajo */
+/* =========================
+   CELULARES
+========================= */
+@media screen and (max-width:768px){
+
+    header{
+
+        position:relative; /* Evita problemas móviles */
+
+    }
+
+    nav ul{
+
+        flex-direction:column; /* Menú vertical */
+
+        align-items:center; /* Centra opciones */
+
+        padding:20px;
+
+        gap:10px;
+
+    }
+
+    nav li{
+
+        margin:5px 0;
+
+    }
+
+    .logo,
+    .logo2{
+
+        position:static; /* Quita posición absoluta */
+
+        display:block;
+
+        margin:10px auto;
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    main{
+
+        flex-direction:column; /* Todo vertical */
+
+        padding:20px;
+
+    }
+
+    .contenedor_titulo{
+
+        flex-direction:column;
+
+        width:100%;
+
+        margin:40px auto;
+
+    }
+
+    .estilo_titulos{
+
+        width:100%;
+
+        text-align:center;
+
+        font-size:2rem;
+
+        padding:20px;
+
+    }
+
+    .imgtitulo,
+    .imgtitulo2{
+
+        width:100%;
+
+        margin:10px 0;
+
+    }
+
+    .contacto h1{
+
+        font-size:2.5rem;
+
+        margin-bottom:40px;
+
+    }
+
+    .contacto p{
+
+        font-size:1rem;
+
+    }
+
+    .info{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .esetelefono,
+    .correo,
+    .horarios{
+
+        width:100%;
+
+        min-width:100%;
+
+    }
+
+    .ubicacion{
+
+        padding:0;
+
+    }
+
+    .mapa iframe{
+
+        height:300px;
+
+    }
+
+    .contenedor_formulario{
+
+        width:100%;
+
+        padding:25px;
+
+        border-radius:20px;
+
+    }
+
+    .titulo_formulario{
+
+        font-size:2rem;
+
+    }
+
+    .grupo_input{
+
+        padding:15px;
+
+    }
+
+    .icono_campo{
+
+        width:22px;
+
+        height:22px;
+
+    }
+
+    button{
+
+        width:100%; /* Botón ancho completo */
+
+    }
+
+    footer{
+
+        padding:20px 10px;
+
+    }
+
+    .footer-redes{
+
+        gap:15px;
+
+    }
+
+    .footer-redes a{
+
+        font-size:1.5rem;
+
+    }
+
+    footer p{
+
+        font-size:0.7rem;
+
+    }
+
 }
-/*CHARLIE*/
+/* 
+   ANIMACIÓN
+*/
+
+@keyframes zoomRevelador{
+
+    0%{
+
+        opacity:0; /* Invisible */
+
+        transform:scale(0.2); /* Muy pequeño */
+
+    }
+
+    100%{
+
+        opacity:1; /* Visible */
+
+        transform:scale(1); /* Tamaño normal */
+
+    }
+
+}
+
+/*
+   CONTENEDOR EXTRA
+*/
+
+#contenedor_icono{
+
+    padding-bottom:80px; /* Espacio antes del footer */
+
+}
