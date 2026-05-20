@@ -1,167 +1,422 @@
-/* Jon*/
-#fondo_portada{  
-    
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
-    background-color: white;
-    /*background-size: cover;/* La imagen cubre toda la pantalla sin deformarse */
-    /*background-repeat: no-repeat;/* No deja que la imagen se repita como mosaico */
-    /*background-attachment: fixed;/* La imagen se queda quieta mientras haces scroll */
-    /*background-position: center;/* Centra la imagen siempre */
-
-    /*min-height: 100vh;            /* Asegura que el fondo cubra al menos el 100% del alto de la pantalla 
-    /*font-family: 'Tahoma', sans-serif; */
-    
+*{
+    margin:0; /* Elimina márgenes automáticos del navegador */
+    padding:0; /* Elimina espacios internos automáticos */
+    box-sizing:border-box; /* Hace que el padding y border no aumenten el tamaño total */
 }
 
-header {
-    top: 0; /* top: 0: Pega el elemento exactamente al borde superior de la ventana */
-    width: 100%; /* width: 100%: Hace que el menú ocupe todo el ancho horizontal de la pantalla */
-    background-color: rgb(255, 255, 255); /* Azul del parque con transparencia */
-    /*position: fixed; /*te va a seguir la barra de navegacion al bajar*/
-    position: static; /*te va a seguir la barra de navegacion al bajar*/
-    /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
-    z-index: 10; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+/* CONFIGURACIÓN GENERAL DE LA PÁGINA */
+html,body{
+    width:100%; /* Hace que el body ocupe todo el ancho */
+    overflow-x:hidden; /* Evita el scroll horizontal */
+    font-family:'Tahoma', sans-serif; /* Fuente principal */
+    background:#f5f7f2; /* Color de fondo general */
 }
 
+/* HEADER */
+header{
+    width:100%; /* Ocupa todo el ancho */
+    background:white; /* Fondo blanco */
+    position:static; /* Mantiene posición normal */
+    z-index:10; /* Prioridad visual sobre otros elementos */
+}
 
-
-
-/*Charlie*/
-/* todo esto es del logo*/
+/* LOGO */
 .logo2{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 5px;
-    left: 50px;
-    width: 190px;
-    height: 100px;
-    z-index: 5;
-}
-/*esta es del  titulo  de "contactanos"*/
-.contacto p{
-    color: rgb(7, 87, 7);
-    font-family: 'Bodoni Moda';  
-    text-transform: uppercase; 
-    margin-top: 50px;
-    margin-bottom: 5px;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    font-size: 3rem;
+    position:absolute; /* Permite mover el logo libremente */
+    top:5px; /* Distancia desde arriba */
+    left:50px; /* Distancia desde la izquierda */
+    width:190px; /* Ancho del logo */
+    height:100px; /* Alto del logo */
+    object-fit:contain; /* Evita deformación de imagen */
 }
 
+/* SECCIÓN TÍTULO */
+.contacto{
+    text-align:center; /* Centra el contenido */
+    padding:60px 20px 20px; /* Espaciado interno */
+}
+
+/* TÍTULO PRINCIPAL */
+.contacto h1{
+    color:rgb(7,87,7); /* Color verde oscuro */
+    font-size:6rem; /* Tamaño grande del texto */
+    letter-spacing:5px; /* Espaciado entre letras */
+    margin-bottom:310px; /* Separación inferior */
+    font-family:'Bodoni Moda'; /* Fuente elegante */
+}
+
+/* SUBTÍTULO */
+.contacto p{
+    color:rgb(7,87,7); /* Color verde claro */
+    font-size:1.5rem; /* Tamaño del texto */
+    font-family:'Impact'; /* Fuente del párrafo */
+    text-align: center; /* Centra el texto */
+}
+
+/* CONTENEDOR GENERAL */
+.contacto-dos{
+    width:100%; /* Ocupa todo el ancho */
+    display:flex; /* Activa Flexbox */
+    flex-direction:column; /* Coloca elementos verticalmente */
+    align-items:center; /* Centra horizontalmente */
+    gap:60px; /* Espacio entre secciones */
+    padding:40px 20px 80px; /* Espaciado interno */
+}
+
+/* CONTENEDOR DE TARJETAS */
 .info{
-    color: rgb(255, 255, 255);    
-    background-color: rgba(0,0,0,0.1); /* Fondo gris muy claro para que resalte */
-    border-radius: 60px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    max-width: 100%;
-    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+    width:100%; /* Todo el ancho disponible */
+    max-width:1200px; /* Máximo ancho permitido */
+    display:flex; /* Flexbox */
+    gap:25px; /* Espacio entre tarjetas */
+    flex-wrap:wrap; /* Permite bajar tarjetas */
+    justify-content:center; /* Centra tarjetas */
 }
-.info h3{
-    color: rgb(255, 255, 255);
-}
+
+/* TARJETAS */
 .esetelefono{
-    font-family: 'Tahoma';
-    background-color: #14130c; /* Fondo gris muy claro para que resalte */
-    border-radius: 50px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    max-width: 50%;
-    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+    background:rgb(61,151,139); /* Fondo blanco */
+    border-radius:25px; /* Bordes redondeados */
+    padding:35px; /* Espaciado interno */
+    flex:1; /* Todas ocupan el mismo espacio */
+    min-width:280px; /* Tamaño mínimo */
+    box-shadow:0 10px 25px rgb(61,151,139, 0.8); /* Sombra elegante */
+    transition:0.3s ease; /* Animación suave */
 }
 .correo{
-    font-family: 'Tahoma';
-    background-color: #14130c; /* Fondo gris muy claro para que resalte */
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    max-width: 50%;
-    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+    background:rgb(61,151,139); /* Fondo blanco */
+    border-radius:25px; /* Bordes redondeados */
+    padding:35px; /* Espaciado interno */
+    flex:1; /* Todas ocupan el mismo espacio */
+    min-width:280px; /* Tamaño mínimo */
+    box-shadow:0 -10px 25px rgb(61,151,139, 0.8); /* Sombra elegante */
+    transition:0.3s ease-in; /* Animación suave */
 }
 .horarios{
-    font-family: 'Tahoma';
-    background-color: #14130c; /* Fondo gris muy claro para que resalte */
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    max-width: 50%;
-    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+    background:rgb(61,151,139); /* Fondo blanco */
+    border-radius:25px; /* Bordes redondeados */
+    padding:35px; /* Espaciado interno */
+    flex:1; /* Todas ocupan el mismo espacio */
+    min-width:280px; /* Tamaño mínimo */
+    box-shadow:0 10px 25px rgb(61,151,139, 0.8); /* Sombra elegante */
+    transition:0.3s ease; /* Animación suave */
 }
-.ubicacion {
-    display: flex;
-    flex-direction: row;    /* Alinea mapa y formulario en fila */
-    
-    align-items: flex-start; /* Alinea ambos al inicio superior */
-    gap: 50px;              /* Espacio de separación entre ambos */
-    flex-wrap: wrap;        /* Si la pantalla es pequeña, se ponen uno abajo del otro */
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 1200px;      /* Evita que se estiren demasiado */
 
+/* EFECTO HOVER */
+.esetelefono:hover,
+.horarios:hover{
+    transform:translateY(-20px); /* Eleva la tarjeta */
 }
+.correo:hover{
+    transform:translateY(20px); /* Bajas la tarjeta */
+}
+
+/* TÍTULOS DE TARJETAS */
+.esetelefono h3,
+.correo h3,
+.horarios h3{
+    color:rgb(255, 255, 255); /* Verde oscuro */
+    font-size:1.4rem; /* Tamaño texto */
+    margin-bottom:20px; /* Separación abajo */
+}
+
+/* TEXTO DE TARJETAS */
+.esetelefono p,
+.correo p{
+    color:rgb(208,231,4); /* Gris oscuro */
+    line-height:1.7; /* Espacio entre líneas */
+    text-align: center; /* Centra texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+}
+.horarios-container table tr td{
+    color:rgb(208,231,4); /* Gris oscuro */
+    line-height:1.7; /* Espacio entre líneas */
+}
+
+/* TABLA */
+table{
+    width:100%; /* Ocupa todo el ancho */
+    border-collapse:collapse; /* Une bordes */
+}
+
+/* FILAS TABLA */
+table tr{
+    border-bottom:1px solid #fdfcfc; /* Línea inferior */
+}
+
+/* CELDAS TABLA */
+table td{
+    padding:12px 0; /* Espaciado vertical */
+    
+}
+
+/* SECCIÓN UBICACIÓN */
+.ubicacion{
+    width:100%; /* Todo el ancho */
+    max-width:1200px; /* Límite máximo */
+    display:flex; /* Flexbox */
+    flex-direction:column; /* Elementos en columna */
+    gap:25px; /* Espacio entre elementos */
+    padding:0 20px; /* Espacio lateral */
+}
+
+/* CONTENEDOR MAPA */
+.mapa{
+    width:100%; /* Todo el ancho */
+}
+
+/* TEXTO DIRECCIÓN */
 .mapa p{
-    color: rgb(7, 87, 7);
-    font-family: 'Bodoni Moda';  
-    text-transform: uppercase; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 90%;
-    font-size: 3rem;
+    text-align:center; /* Centra texto */
+    color:rgb(7,87,7); /* Verde */
+    font-size:2.5rem; /* Tamaño grande */
+    margin-bottom:20px; /* Separación inferior */
+    font-family:'Bodoni Moda'; /* Fuente elegante */
 }
 
-.ubicacion iframe {
-    width: 100%;            /* Se adapta al tamaño del contenedor .ubicacion */
-    height: 400px;          /* Altura fija para que no sea eterno */
-    border-radius: 15px;    /* Bordes redondeados para que combine con el formulario */
-}
-.ubicacion {
-    flex: 1;                /* Toma la mitad del espacio */
-    min-width: 300px;
-    max-width: 550px;
+/* MAPA */
+.mapa iframe{
+    width:100%; /* Todo el ancho */
+    height:500px; /* Altura fija */
+    border-radius:25px; /* Bordes redondeados */
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.838); /* Sombra */
 }
 
-iframe {
-    max-width: 100%; /* Evita que el mapa sea más ancho que su contenedor */
-    width: 100%;
-}
-/* Ajuste para el bloque de texto (Teléfono, Correo, Horarios) */
-.info {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    
-    gap: 20px;           /* Espacio entre cada div de info */
+/* TARJETA DIRECCIÓN */
+.direccion{
+    background:white; /* Fondo blanco */
+    padding:30px; /* Espaciado interno */
+    border-radius:20px; /* Bordes redondeados */
+    box-shadow:0 10px 25px rgba(0,0,0,0.08); /* Sombra */
+    text-align:center; /* Centra texto */
+    line-height:1.8; /* Espaciado entre líneas */
+    color:#333; /* Color texto */
 }
 
-/* Estilo para los títulos dentro de la info para que se vean ordenados */
-.info h3 {
-    color: rgb(7, 87, 7);
-    margin-bottom: 5px;
+/* SECCIÓN FORMULARIO */
+.seccion_formulario{
+    width:100%; /* Todo el ancho */
+    display:flex; /* Flexbox */
+    justify-content:center; /* Centra horizontalmente */
+    padding:0 20px; /* Espacio lateral */
 }
 
-/* Responsivo: Si la pantalla es pequeña, se pondrán uno abajo del otro */
-@media (max-width: 768px) {
-    .contacto-dos {
-        
-        align-items: center;
+/* CONTENEDOR FORMULARIO */
+.contenedor_formulario{
+    width:100%; /* Todo el ancho disponible */
+    max-width:950px; /* Máximo ancho */
+
+    background: linear-gradient(
+        135deg, /* Dirección del degradado */
+        rgb(61,151,139), /* Primer color */
+        rgb(208,231,4) /* Segundo color */
+    );
+
+    padding:50px; /* Espaciado interno */
+    border-radius:35px; /* Bordes redondeados */
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.18); /* Sombra */
+
+    border:4px solid rgb(0, 0, 0); /* Borde azul */
+}
+
+/* TÍTULO FORMULARIO */
+.titulo_formulario{
+    text-align:center; /* Centra texto */
+    color:white; /* Color blanco */
+    font-size:2.4rem; /* Tamaño */
+    margin-bottom:40px; /* Espacio inferior */
+    font-family:'Bodoni Moda'; /* Fuente elegante */
+    letter-spacing:1px; /* Separación letras */
+}
+
+/* FORMULARIO */
+.formulario_visita{
+    display:flex; /* Flexbox */
+    flex-direction:column; /* Elementos verticales */
+    gap:25px; /* Espacio entre inputs */
+}
+
+/* CONTENEDOR INPUT */
+.grupo_input{
+
+    display:flex; /* Activa Flexbox */
+
+    align-items:center; /* Centra verticalmente */
+
+    gap:15px; /* Espacio entre icono y texto */
+
+    background:rgba(255,255,255,0.15); /* Fondo transparente */
+
+    padding:18px 20px; /* Espacio interno */
+
+    border-radius:18px; /* Bordes redondeados */
+
+    backdrop-filter:blur(5px); /* Efecto vidrio borroso */
+
+    border:2px solid rgb(208,231,4); /* Borde amarillo */
+
+    box-shadow:none; /* Quita sombras */
+
+    transition:0.3s; /* Animación suave */
+
+}
+
+/* EFECTO HOVER */
+.grupo_input:hover{
+
+    border-color:rgb(5, 5, 5); /* Cambia borde a negro */
+
+    transform:translateY(-2px); /* Sube un poco */
+
+}
+
+/* ICONOS */
+.icono_campo{
+    width:30px; /* Ancho icono */
+    height:30px; /* Alto icono */
+}
+
+/* INPUTS */
+.control{
+
+    width:100%; /* Ocupa todo el ancho */
+
+    border:none; /* Quita bordes */
+
+    background:transparent; /* Fondo transparente */
+
+    font-size:1rem; /* Tamaño del texto */
+
+    outline:none; /* Quita borde azul automático */
+
+    color:rgb(4, 4, 4); /* Texto negro */
+
+}
+
+/* INPUT Y TEXTAREA */
+.grupo_input input,
+.grupo_input textarea{
+    cursor:text;
+}
+/* INPUT ACTIVO */
+.control:focus{
+
+    border:none; /* Sin borde */
+
+    outline:none; /* Sin contorno */
+
+    box-shadow:none; /* Sin sombra azul */
+
+}
+
+/* PLACEHOLDER */
+.control::placeholder{
+    color:rgba(0, 0, 0, 0.8); /* Color texto placeholder */
+}
+
+/* TEXTAREA */
+textarea.control{
+    resize:none; /* Impide redimensionar */
+}
+
+/* TEXTO CALIFICACIÓN */
+.texto_calificacion{
+    color:white;
+    font-size:1.1rem;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+/* EFECTO CUANDO ESCRIBES */
+.grupo_input:focus-within{
+
+    border-color:rgb(255, 255, 255);
+
+    box-shadow:0 0 15px rgba(255, 255, 255, 0.4);
+
+}
+
+/* CONTENEDOR ESTRELLAS */
+.estrellas_rating{
+    display:flex; /* Flexbox */
+    justify-content:center; /* Centra estrellas */
+    flex-direction:row-reverse; /* Orden inverso */
+    gap:8px; /* Espacio entre estrellas */
+}
+
+/* OCULTA INPUT RADIO */
+.estrellas_rating input{
+    display:none; /* Oculta botones radio */
+}
+
+/* ESTRELLAS */
+.estrellas_rating label{
+    font-size:2.3rem; /* Tamaño estrellas */
+    color:rgba(255,255,255,0.4); /* Color gris */
+    cursor:pointer; /* Cursor mano */
+    transition:0.2s; /* Animación */
+}
+
+/* EFECTO ESTRELLAS */
+.estrellas_rating input:checked ~ label,
+.estrellas_rating label:hover,
+.estrellas_rating label:hover ~ label{
+    color:rgb(208,231,4); /* Amarillo */
+    transform:scale(1.1); /* Aumenta tamaño */
+}
+
+/* TÉRMINOS */
+.grupo_terminos{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:0.95rem;
+}
+
+/* BOTÓN */
+button{
+    background:rgb(208,231,4); /* Fondo amarillo */
+    color:rgb(7,87,7); /* Texto verde */
+
+    border:none; /* Sin borde */
+
+    padding:18px; /* Espaciado interno */
+
+    border-radius:18px; /* Bordes redondeados */
+
+    font-size:1rem; /* Tamaño texto */
+    font-weight:bold; /* Negrita */
+
+    cursor:pointer; /* Cursor mano */
+
+    transition:0.3s; /* Animación */
+}
+
+/* HOVER BOTÓN */
+button:hover{
+    background:white; /* Fondo blanco */
+    transform:translateY(-3px); /* Se eleva */
+    box-shadow:0 8px 20px rgba(0,0,0,0.2); /* Sombra */
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .contacto h1{
+        font-size:2.5rem; /* Reduce tamaño del título */
     }
-}
 
+    .mapa iframe{
+        height:350px; /* Reduce altura del mapa */
+    }
 
-/*Jon*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Crucial para que el padding no sume ancho */
-}
+    .contenedor_formulario{
+        padding:30px; /* Reduce padding */
+    }
 
-html, body {
-    overflow-x: hidden; /* Esto oculta la barra horizontal por seguridad */
-    width: 100%;
+    .logo2{
+        width:140px; /* Reduce tamaño logo */
+        left:10px; /* Lo acerca al borde */
+    }
 }

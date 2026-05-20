@@ -17,16 +17,18 @@
                 <li><a class="menu1" href="index.html">Inicio</a></li>
                 <li><a class="menu1" href="acerca_de.html">Historia</a></li>
                 <li><a class="menu1" href="galeria.html">Galeria</a></li>
+                 <li><a class="menu1" href="tienda.html"> Tienda</a></li>
+                 <li><a class="menu1" href="flora_fauna.html"> flora y fauna</a></li>
                 <li><a class="menu1" href="contactos.html">Contactos</a></li>
                 <li><a class="menu1" href="creadores.html">Creadores</a></li>
             </ul>
         </nav>
     </header>
+    
         <section class="contacto">
-            <p>¡Contáctanos!</p>
-            <p class="pregunta">¿Tienes dudas sobre tu visita? <br>Escríbenos</p>
+            <h1>¡Contáctanos!</h1>
+            <p class="pregunta">¿Tienes dudas sobre tu visita? <br>Escríbenos!</p>
         </section>
-
           
     <main id="contenedor_icono">
           
@@ -34,13 +36,16 @@
             <section class="info">
                 <div class="esetelefono">
                     <h3>Teléfono</h3>
-                    <p>+503 7517 9169</p>
+                    <p><br>+503 7517 9169</p>
                 </div>
 
                 <div class="correo">
                     <h3>Correo Electrónico</h3>
                     <p>
-                        solicitudesparques@istu.gob.sv <br>
+                        <br>
+                        solicitudesparques@istu.gob.sv 
+                        <br>
+                        <br>    
                         encargado: Lic. Guillermo Fuentes 
                     </p>
                 </div>
@@ -49,13 +54,21 @@
                     <h3>Horarios</h3>
                     <div class="horarios-container">
                         <table>
+                            <br>
                             <tr><td>Lunes</td><td>Cerrado</td></tr>
+                        
                             <tr><td>Martes</td><td>Cerrado</td></tr>
+                            
                             <tr><td>Miércoles</td><td>---8 a.m. - 4 p.m.</td></tr>
+                            
                             <tr><td>Jueves</td><td>---8 a.m. - 4 p.m.</td></tr>
+                            
                             <tr><td>Viernes</td><td>---8 a.m. - 4 p.m.</td></tr>
+                            
                             <tr><td>Sábado</td><td>---8 a.m. - 4 p.m.</td></tr>
+                            
                             <tr><td>Domingo</td><td>---8 a.m. - 4 p.m.</td></tr>
+        
                         </table>
                     </div>
                 </div>
@@ -63,7 +76,7 @@
             
             <section class="ubicacion">
                 <div class="mapa">
-                    <p>Dirección</p>
+                    <p>Para que te ubiques</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.92098333842!2d-89.27201172491458!3d13.483671486880814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cd2f516b01409%3A0xb4a526204d35265d!2sParque%20de%20Aventuras%20Surf%20City%20Walter%20Thilo%20Deininger!5e1!3m2!1ses-419!2ssv!4v1773076901877!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 
@@ -98,20 +111,41 @@
                     </div>
 
                     <div class="contenedor_estrellas">
-                        <p style="color: rgb(7, 87, 7); font-weight: bold;">Califica tu visita:</p>
-                        <div class="estrellas_rating">
-                            <input type="radio" name="estrella" id="estrella5" value="5"><label for="estrella5">★</label>
-                            <input type="radio" name="estrella" id="estrella4" value="4"><label for="estrella4">★</label>
-                            <input type="radio" name="estrella" id="estrella3" value="3"><label for="estrella3">★</label>
-                            <input type="radio" name="estrella" id="estrella2" value="2"><label for="estrella2">★</label>
-                            <input type="radio" name="estrella" id="estrella1" value="1"><label for="estrella1">★</label>
-                        </div>
+
+                        <p class="texto_calificacion">
+                                Califica tu visita:
+                        </p>
+
+                            <div class="estrellas_rating">
+
+                            <input type="radio" name="estrella" id="estrella5" value="5">
+                            <label for="estrella5">★</label>
+
+                                <input type="radio" name="estrella" id="estrella4" value="4">
+                                <label for="estrella4">★</label>
+
+                                <input type="radio" name="estrella" id="estrella3" value="3">
+                                <label for="estrella3">★</label>
+
+                                <input type="radio" name="estrella" id="estrella2" value="2">
+                                <label for="estrella2">★</label>
+
+                                <input type="radio" name="estrella" id="estrella1" value="1">
+                                <label for="estrella1">★</label>
+
+                            </div>
+
                     </div>
 
                     <div class="grupo_terminos">
-                        <input type="checkbox" id="terminos_uso" class="control" required>
-                        <label for="terminos_uso" style="color: #333;">Acepto Términos, Condiciones y Política de Privacidad</label>
-                    </div>
+
+                    <input type="checkbox" id="terminos_uso" required>
+
+                            <label for="terminos_uso">
+                                Acepto Términos, Condiciones y Política de Privacidad
+                            </label>
+
+                    </div>  
 
                     <button type="submit">Enviar Comentario</button>
                 </form>
