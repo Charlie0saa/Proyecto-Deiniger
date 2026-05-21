@@ -1,139 +1,316 @@
-/* --- CONFIGURACIÓN DEL FONDO --- */
-#fondo_portada {  
-    /* Se agrega un degradado oscuro para que el texto blanco siempre sea legible */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Tahoma', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* --- NAVEGACIÓN --- */
-header {
-    top: 0; 
-    width: 100%; 
-    background-color: rgb(255, 255, 255, 0.0); 
-    position: static; 
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    font-family:'Tahoma', sans-serif;
+    background:#e8efe8;
+    
 }
 
-.logo2 {
-    position: absolute;
-    top: 5px;
-    left: 50px;
-    width: 190px;
-    height: 100px;
-    z-index: 5;
+/* FONDO GENERAL */
+
+#fondo_portada{
+    background:linear-gradient(
+        135deg,
+        rgb(7,87,7),
+        rgb(61,151,139)
+    );
+    min-height:100vh;
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
-#contenedor_icono {
-    padding-top: 50px; 
-    padding-bottom: 100px; 
+/* HEADER */
+
+header{
+    width:100%;
+    min-height:120px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(8px);
+
+    border-bottom:1px solid rgba(255,255,255,0.15);
+
+    position:relative;
+
+    z-index:10;
 }
 
-.creadores {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+nav{
+    width:100%;
+    min-height:120px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
 }
 
-.creadores h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 40px;
-    letter-spacing: 15px; /* Ajustado para que no se salga en pantallas pequeñas */
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+.logo2{
+    position:absolute;
+
+    top:10px;
+
+    left:40px;
+
+    width:190px;
+
+    height:100px;
+
+    object-fit:contain;
 }
 
-/* --- GRID DE TARJETAS (Optimizado para 5 personas) --- */
-.contenedor-tarjetas {
-    display: grid;
-    /* Esto acomoda las tarjetas automáticamente según el ancho de la pantalla */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px; 
-    width: 95%;
-    max-width: 1300px;
-    justify-items: center;
+nav ul{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:45px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
 }
 
-/* --- ESTILO DE LAS TARJETAS (Efecto Cristal) --- */
-.jon, .pao, .marco, .charlie, .cris {
-    background: rgba(255, 255, 255, 0.15); 
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 30px 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+.menu1{
+    text-decoration:none;
+
+    color:rgb(7,87,7);
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    transition:0.3s;
 }
 
-/* --- ICONOS CIRCULARES --- */
-.icono-usuario {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #fff;
-    border: 3px solid rgba(255, 255, 255, 0.4);
+.menu1:hover{
+    color:rgb(208,231,4);
 }
 
-/* --- TEXTOS DENTRO DE LAS TARJETAS --- */
-.creadores h2 {
-    font-size: 1.1rem;
-    color: #fff;
-    margin: 10px 0;
-    text-align: center;
-    min-height: 50px; /* Alinea los nombres aunque unos sean más largos */
+/* CONTENEDOR PRINCIPAL */
+
+#contenedor_icono{
+    padding-top:60px;
+    padding-bottom:100px;
 }
 
-.carne {
-    font-size: 0.9rem;
-    color: #a5d6a7; 
-    font-weight: bold;
-    letter-spacing: 1px;
+/* SECCIÓN CREADORES */
+
+.creadores{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
 }
 
-/* --- EFECTOS HOVER (Bordes de colores) --- */
-.jon:hover { border-color: #2e7d32; transform: translateY(-5px); }
-.pao:hover { border-color: #9024ca; transform: translateY(-5px); }
-.marco:hover { border-color: #e04542; transform: translateY(-5px); }
-.charlie:hover { border-color: #27eeea; transform: translateY(-5px); }
-.cris:hover { border-color: #d8f424; transform: translateY(-5px); }
+/* TITULO */
 
-/* --- FOOTER --- */
-footer {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+.creadores h1{
+    font-size:4rem;
+    color:white;
+    margin-bottom:50px;
+    letter-spacing:8px;
+    font-family:'Bodoni Moda';
+    text-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
 
-.footer-redes a {
-    font-size: 1.5rem;
-    margin: 0 10px;
-    color: #2e7d32;
-    transition: color 0.3s;
+/* GRID TARJETAS */
+
+.contenedor-tarjetas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:30px;
+    width:95%;
+    max-width:1300px;
+    justify-items:center;
 }
 
-.footer-redes a:hover {
-    color: #1b5e20;
+/* TARJETAS */
+
+.jon,
+.pao,
+.marco,
+.charlie,
+.cris{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:2px solid rgba(255,255,255,0.2);
+
+    border-radius:25px;
+
+    padding:35px 20px;
+
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s ease;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* EFECTO HOVER */
+
+.jon:hover,
+.pao:hover,
+.marco:hover,
+.charlie:hover,
+.cris:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.22);
+}
+
+/* ICONO */
+
+.icono-usuario{
+    width:85px;
+    height:85px;
+
+    background:linear-gradient(
+        135deg,
+        rgb(208,231,4),
+        rgb(61,151,139)
+    );
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:20px;
+
+    border:3px solid rgba(255,255,255,0.5);
+}
+
+/* ICONO INTERNO */
+
+.icono-usuario i{
+    font-size:2rem;
+    color:white;
+}
+
+/* NOMBRES */
+
+.creadores h2{
+    font-size:1.2rem;
+    color:white;
+    margin:10px 0;
+    text-align:center;
+}
+
+/* CARNET */
+
+.carne{
+    font-size:0.95rem;
+    color:rgb(208,231,4);
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* HOVER COLORES */
+
+.jon:hover{
+    border-color:#2e7d32;
+}
+
+.pao:hover{
+    border-color:#9024ca;
+}
+
+.marco:hover{
+    border-color:#e04542;
+}
+
+.charlie:hover{
+    border-color:#27eeea;
+}
+
+.cris:hover{
+    border-color:#d8f424;
+}
+
+/* FOOTER */
+
+footer{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(8px);
+
+    padding:20px;
+
+    text-align:center;
+
+    color:white;
+
+    border-top:1px solid rgba(255,255,255,0.15);
+}
+
+/* REDES */
+
+.footer-redes{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:15px;
+}
+
+.footer-redes a{
+    color:white;
+    font-size:2rem;
+    transition:0.3s;
+}
+
+.footer-redes a:hover{
+    color:rgb(208,231,4);
+}
+
+/* TEXTO FOOTER */
+
+footer p{
+    font-size:0.8rem;
+    line-height:1.5;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .creadores h1{
+        font-size:2.7rem;
+        letter-spacing:4px;
+    }
+
+    .logo2{
+        width:140px;
+        left:10px;
+    }
+}
+
+@media(max-width:480px){
+
+    .creadores h1{
+        font-size:2.2rem;
+    }
+
+    .contenedor-tarjetas{
+        grid-template-columns:1fr;
+    }
 }

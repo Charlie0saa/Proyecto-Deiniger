@@ -1,20 +1,20 @@
 #fondo_portada{  
-    
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');/* Degradado oscuro para que el texto blanco resalte sobre la imagen */
-    background-color: white;
-    /*background-size: cover;/* La imagen cubre toda la pantalla sin deformarse */
-    /*background-repeat: no-repeat;/* No deja que la imagen se repita como mosaico */
-    /*background-attachment: fixed;/* La imagen se queda quieta mientras haces scroll */
-    /*background-position: center;/* Centra la imagen siempre */
+    width:100%; /* Hace que el body ocupe todo el ancho */
+    overflow-x:hidden; /* Evita el scroll horizontal */
+    font-family:'Tahoma', sans-serif; /* Fuente principal */
+    background:#f5f7f2; /* Color de fondo general */
 
-    /*min-height: 100vh;            /* Asegura que el fondo cubra al menos el 100% del alto de la pantalla 
-    /*font-family: 'Tahoma', sans-serif; */
+   background-image:url("../img/fondo5.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     
 }
 header {
     top: 0; /* top: 0: Pega el elemento exactamente al borde superior de la ventana */
     width: 100%; /* width: 100%: Hace que el menú ocupe todo el ancho horizontal de la pantalla */
-    background-color: rgba(255, 255, 255, 0.7); /* Azul del parque con transparencia */
+    background:rgb(239, 239, 229); /* Fondo blanco */
     /*position: fixed; /*te va a seguir la barra de navegacion al bajar*/
     position: static; /*te va a seguir la barra de navegacion al bajar*/
     /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
@@ -74,4 +74,23 @@ ul {
     max-width: 80%;
     margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
     color: #333; /* Texto oscuro para lectura fácil */
+}
+/* FOOTER */
+footer{
+    background:#d9d9d9;
+    padding:20px;
+    text-align:center;
+    color:rgb(7,87,7);
+}
+
+.footer-redes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+.footer-redes a{
+    color:rgb(7,87,7);
+    text-decoration:none;
 }
