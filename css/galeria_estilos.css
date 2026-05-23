@@ -1,7 +1,6 @@
-/*contenedor pricipal de la galeria*/
 .contenedor_galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 fotos por fila */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   width: 80%; 
   margin: 50px auto; 
@@ -10,28 +9,30 @@
 .tarjeta_foto {
   background-color: white;
   border-radius: 8px;
-  overflow: hidden; /* para mantener el zoom dentro del cuadro */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden; 
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.2);
+  border: 2px solid rgb(0, 230, 118);
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*efecto Zoom  para las fotos*/
+.tarjeta_foto:hover {
+  box-shadow: 0 0 20px rgb(0, 230, 118), 0 0 30px rgba(0, 230, 118, 0.6);
+}
+
 .foto_contenedor {
   width: 100%;
   aspect-ratio: 1 / 1; 
   background-size: cover;
   background-position: center;
-  transition: transform 0.5s ease; /*animacion de la imagen */
+  transition: transform 0.5s ease; 
 }
 
-/*efecto hover para que  la imagen crezca un poco */
 .tarjeta_foto:hover .foto_contenedor {
-  transform: scale(1.1); /* Efecto de enfoque para resaltar la imagen  */
-
+  transform: scale(1.1); 
 }
 
-/* 3. listado de las fotos */
 #foto_1 { background-image: url('../img/entrada1.png'); }
 #foto_2 { background-image: url('../img/entrada3.jpg'); }
 #foto_3 { background-image: url('../img/juegos1.jpg'); }
@@ -49,8 +50,6 @@
 #foto_15 { background-image: url('../img/mirador1.jpg'); }
 #foto_16 { background-image: url('../img/nacimiento1.jpg'); }
 
-
-
 .info_texto {
   padding: 15px;
   text-align: center;
@@ -58,19 +57,24 @@
   z-index: 5;
 }
 
-/* Activa el diseño de pantalla completa al seleccionar una imagen */
+.texto_blanco_galeria {
+  color: white !important;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 .pantalla_completa {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.9);
-  display: none; /* Oculto por defecto para que no se abra al iniciar la galeria */
+  display: none; 
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-.pantalla_completa:target { display: flex; /* para que la imagen se muestre en pantalla completa */
+.pantalla_completa:target { display: flex; 
 } 
 
 .pantalla_completa img {
@@ -85,8 +89,8 @@
   color: white;
   font-size: 60px;
   text-decoration: none;
-
 }
+
 .logo3{
     background-size: contain;
     background-repeat: no-repeat;
@@ -98,7 +102,7 @@
     height: 100px;
     z-index: 5;
 }
-/*contenido de la tienda*/
+
 .contenedor_tienda {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -175,3 +179,69 @@
 #regalo_6 { background-image: url('../img/regalo_cafe.png'); }
 #regalo_7 { background-image: url('../img/regalo_pulsera.png'); }
 #regalo_8 { background-image: url('../img/regalo_iman.png'); }
+
+.enlace_carrito_flotante {
+    position: absolute;
+    top: 35px;
+    right: 140px; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    z-index: 120;
+    transition: transform 0.2s ease;
+}
+
+.enlace_carrito_flotante:hover {
+    transform: scale(1.1);
+}
+
+.icono_carrito_svg path {
+    stroke: rgb(7, 87, 7) !important;
+}
+
+.contador_carrito {
+    background-color: rgb(7, 87, 7);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    font-family: Arial, sans-serif;
+    min-width: 18px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .contenedor_galeria {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+    .contenedor_tienda {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+    .enlace_carrito_flotante {
+        right: 90px; 
+        top: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor_galeria {
+        grid-template-columns: 1fr;
+    }
+    .contenedor_tienda {
+        grid-template-columns: 1fr;
+    }
+    .tarjeta_producto {
+        flex-direction: column;
+        height: auto;
+    }
+    .foto_producto {
+        width: 100%;
+        height: 200px;
+    }
+}

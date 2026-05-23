@@ -1,4 +1,5 @@
 #fondo_portada{  
+<<<<<<< HEAD
     width:100%; /* Hace que el body ocupe todo el ancho */
     overflow-x:hidden; /* Evita el scroll horizontal */
     font-family:'Tahoma', sans-serif; /* Fuente principal */
@@ -19,6 +20,15 @@ header {
     position: static; /*te va a seguir la barra de navegacion al bajar*/
     /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
     /*z-index: 10; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+=======
+    background-color: white;
+}
+header {
+    top: 0; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    position: static; 
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
 }
 
 .logo2{
@@ -32,18 +42,15 @@ header {
     height: 100px;
     z-index: 5;
 }
-/*x*/
+
 #contenedor_icono{
     flex-direction: column;
 }
 ul {
-    list-style: none; /* Elimina los puntos de las listas */
-    padding: 0; /* Elimina el padding predeterminado de las listas */
-    margin: 0; /* Elimina el margen predeterminado de las listas */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
-
-/*Jon*/
-
 
 .estilo_titulos{
     color: rgb(7, 87, 7);
@@ -58,20 +65,21 @@ ul {
 }
 .pregunta {
     color: #2c3e50;
-    font-family: 'Arial', sans-serif; /* Fuente más legible para párrafos largos */
-    text-transform: none; /* ¡IMPORTANTE! Quita las mayúsculas de los párrafos */
-    text-align: justify; /* Alineación limpia para lectura */
-    width: 100%; /* Que use todo el ancho de la tarjeta */
+    font-family: 'Arial', sans-serif; 
+    text-transform: none; 
+    text-align: justify; 
+    width: 100%; 
     padding: 0;
-    font-size: 1.1rem; /* Tamaño estándar para lectura */
-    line-height: 1.6; /* Espacio entre líneas */
+    font-size: 1.1rem; 
+    line-height: 1.6; 
 }
 .tarjeta_historia {
-    background-color: #f9f9f9; /* Fondo gris muy claro para que resalte */
+    background-color: #f9f9f9; 
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     max-width: 80%;
+<<<<<<< HEAD
     margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
     color: #333; /* Texto oscuro para lectura fácil */
 }
@@ -94,3 +102,8 @@ footer{
     color:rgb(7,87,7);
     text-decoration:none;
 }
+=======
+    margin: 50px auto; 
+    color: #333; 
+}
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d

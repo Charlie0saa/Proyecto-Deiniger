@@ -1,0 +1,164 @@
+.seccion_carrito {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.titulo_carrito {
+    color: rgb(1, 65, 38);
+    font-size: 2.5rem;
+    font-family: 'Bodoni Moda', Georgia, serif;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.contenedor_tabla_carrito {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border: 2px solid rgb(1, 65, 38);
+    margin-bottom: 40px;
+}
+
+.tabla_carrito {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla_carrito th {
+    background-color: rgb(1, 65, 38);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.tabla_carrito td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.celda_producto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mini_foto {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+#mini_1 { background-image: url('../img/regalo_camiseta.png'); }
+#mini_2 { background-image: url('../img/regalo_gorra.png'); }
+
+.contenedor_resumen_pago {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cuadro_resumen {
+    background-color: #02412e;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cuadro_resumen h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.fila_resumen {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.linea_division {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+.total_pago {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d4e157;
+}
+
+.boton_pagar {
+    display: block;
+    width: 100%;
+    background-color: #052569;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton_pagar:hover {
+    background-color: #3553ff;
+    transform: scale(1.03);
+}
+
+.enlace_regresar {
+    display: block;
+    text-align: center;
+    color: #a5d6a7;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.enlace_regresar:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor_resumen_pago {
+        justify-content: center;
+    }
+    
+    .cuadro_resumen {
+        max-width: 100%;
+    }
+    
+    .tabla_carrito th, .tabla_carrito td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .mini_foto {
+        width: 45px;
+        height: 45px;
+    }
+}

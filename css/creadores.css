@@ -1,7 +1,21 @@
+<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+=======
+/* --- CONFIGURACIÓN DEL FONDO --- */
+#fondo_portada {  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
 }
 
 html,body{
@@ -53,6 +67,7 @@ nav{
     position:relative;
 }
 
+<<<<<<< HEAD
 .logo2{
     position:absolute;
 
@@ -81,6 +96,24 @@ nav ul{
     margin:0;
 
     padding:0;
+=======
+.creadores h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: 15px; 
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* --- GRID DE TARJETAS (Optimizado para 5 personas) --- */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px; 
+    width: 95%;
+    max-width: 1300px;
+    justify-items: center;
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
 }
 
 .menu1{
@@ -99,11 +132,21 @@ nav ul{
     color:rgb(208,231,4);
 }
 
+<<<<<<< HEAD
 /* CONTENEDOR PRINCIPAL */
 
 #contenedor_icono{
     padding-top:60px;
     padding-bottom:100px;
+=======
+/* --- TEXTOS DENTRO DE LAS TARJETAS --- */
+.creadores h2 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+    min-height: 50px; 
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
 }
 
 /* SECCIÓN CREADORES */
@@ -138,6 +181,7 @@ nav ul{
     justify-items:center;
 }
 
+<<<<<<< HEAD
 /* TARJETAS */
 
 .jon,
@@ -314,3 +358,25 @@ footer p{
         grid-template-columns:1fr;
     }
 }
+=======
+.footer-redes a:hover {
+    color: #1b5e20;
+}
+
+@media screen and (max-width: 768px) {
+    .creadores h1 {
+        font-size: 2rem;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+    }
+    
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .creadores h2 {
+        min-height: auto;
+    }
+}
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
