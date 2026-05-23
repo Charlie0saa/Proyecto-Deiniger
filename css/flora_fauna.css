@@ -1,179 +1,411 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    overflow-x:hidden;
+}
+
+/* =========================
+   HEADER Y MENÚ
+========================= */
+
+header{
+    width:100%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    min-height:100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:relative;
+}
+
+/* LOGO */
+
 .logo3{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 5px;
-    left: 50px;
-    width: 190px;
-    height: 100px;
-    z-index: 5;
+    width:190px;
+    height:auto;
+    object-fit:contain;
 }
 
-/* Activa el diseño de pantalla completa al seleccionar una imagen */
-.pantalla_completa {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.9);
-  display: none; /* Oculto por defecto para que no se abra al iniciar la galeria */
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+/* MENÚ */
+
+.lista_navegacion{
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    list-style:none;
 }
 
-.pantalla_completa:target { display: flex; /* para que la imagen se muestre en pantalla completa */
-} 
-
-.pantalla_completa img {
-  max-width: 85%;
-  max-height: 85%;
-  border: 4px solid white;
+.lista_navegacion li{
+    list-style:none;
 }
 
-.boton_cerrar {
-  position: absolute;
-  top: 20px; right: 40px;
-  color: white;
-  font-size: 60px;
-  text-decoration: none;
+.menu1{
+    text-decoration:none;
+    color:rgb(1, 65, 38);
+    font-weight:bold;
+    font-size:17px;
+
+    transition:0.3s;
 }
 
-.bloque_principal {
-    width: 85%;
-    margin: 40px auto;
-    font-family: Arial, sans-serif;
+.menu1:hover{
+    color:#0f9d58;
 }
 
-.bloque_seccion {
-    margin-bottom: 60px;
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.bloque_principal{
+    width:90%;
+    margin:50px auto;
 }
 
-.titulo_seccion {
-    color: white;
-    font-size: 28px;
-    border-bottom: 3px solid rgb(1, 65, 38);
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+/* =========================
+   SECCIONES
+========================= */
+
+.bloque_seccion{
+    margin-bottom:70px;
 }
 
-.titulo_seccion i {
-    margin-right: 10px;
-    color: #fff;
+.titulo_seccion{
+    font-size:32px;
+    color:rgb(1, 65, 38);
+
+    border-bottom:4px solid rgb(1, 65, 38);
+
+    padding-bottom:12px;
+    margin-bottom:35px;
 }
 
-.cuadricula_naturaleza {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.titulo_seccion i{
+    margin-right:10px;
 }
 
+/* =========================
+   GRID DE TARJETAS
+========================= */
 
-.tarjeta_naturaleza {
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.cuadricula_naturaleza{
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:30px;
 }
 
-.tarjeta_naturaleza:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjeta_naturaleza{
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+
+    display:flex;
+    flex-direction:column;
 }
 
-.cuadro_foto {
-    width: 100%;
-    height: 220px;
-    position: relative;
-    overflow: hidden;
+.tarjeta_naturaleza:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
 }
 
-.cuadro_foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+/* =========================
+   IMÁGENES
+========================= */
+
+.cuadro_foto{
+    width:100%;
+    height:250px;
+
+    overflow:hidden;
+
+    position:relative;
 }
 
-.tarjeta_naturaleza:hover .cuadro_foto img {
-    transform: scale(1.08);
+.cuadro_foto img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:0.5s;
 }
 
-.etiqueta {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 6px 12px;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    border-radius: 20px;
-    letter-spacing: 1px;
+.tarjeta_naturaleza:hover .cuadro_foto img{
+    transform:scale(1.08);
 }
 
-.etiqueta.flora { background-color: #2e7d32; }
-.etiqueta.fauna { background-color: #e65100; }
-.etiqueta.cueva { background-color: #455a64; }
+/* =========================
+   ETIQUETAS
+========================= */
 
-.datos_tarjeta {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.etiqueta{
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-size:12px;
+    font-weight:bold;
+
+    text-transform:uppercase;
 }
 
-.datos_tarjeta h3 {
-    margin: 0 0 5px 0;
-    font-size: 20px;
-    color: rgb(1, 65, 38);
+.etiqueta.flora{
+    background:#2e7d32;
 }
 
-.nombre_cientifico {
-    font-style: italic;
-    color: #666;
-    font-size: 14px;
-    margin: 0 0 15px 0;
+.etiqueta.fauna{
+    background:#e65100;
 }
 
-.descripcion {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.5;
-    margin: 0 0 20px 0;
-    flex-grow: 1;
+.etiqueta.cueva{
+    background:#455a64;
 }
 
-.boton_agrandar {
-    align-self: flex-start;
-    background-color: rgb(1, 65, 38);
-    color: white;
-    text-decoration: none;
-    padding: 10px 18px;
-    font-size: 13px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+/* =========================
+   DATOS TARJETA
+========================= */
+
+.datos_tarjeta{
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex-grow:1;
 }
 
-.boton_agrandar:hover {
-    background-color: rgb(0, 45, 25);
+.datos_tarjeta h3{
+    color:rgb(1, 65, 38);
+
+    font-size:24px;
+
+    margin-bottom:8px;
 }
 
-.boton_agrandar i {
-    margin-left: 5px;
+.nombre_cientifico{
+    font-style:italic;
+
+    color:#666;
+
+    margin-bottom:15px;
 }
 
-@media (max-width: 900px) {
-    .cuadricula_naturaleza {
-        grid-template-columns: repeat(2, 1fr);
+.descripcion{
+    line-height:1.6;
+
+    color:#444;
+
+    margin-bottom:25px;
+
+    flex-grow:1;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.boton_agrandar{
+    align-self:flex-start;
+
+    background:rgb(1, 65, 38);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    font-size:14px;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.boton_agrandar:hover{
+    background:rgb(0, 45, 25);
+}
+
+.boton_agrandar i{
+    margin-left:6px;
+}
+
+/* =========================
+   PANTALLA COMPLETA
+========================= */
+
+.pantalla_completa{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.9);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+}
+
+.pantalla_completa:target{
+    display:flex;
+}
+
+.pantalla_completa img{
+    max-width:85%;
+    max-height:85%;
+
+    border:4px solid white;
+
+    border-radius:10px;
+}
+
+/* BOTÓN CERRAR */
+
+.boton_cerrar{
+    position:absolute;
+
+    top:20px;
+    right:40px;
+
+    color:white;
+
+    font-size:60px;
+
+    text-decoration:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#d9d9d9;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:rgb(1, 65, 38);
+}
+
+.footer-redes{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:15px;
+}
+
+.footer-redes a{
+    color:rgb(1, 65, 38);
+
+    font-size:28px;
+
+    transition:0.3s;
+}
+
+.footer-redes a:hover{
+    transform:scale(1.2);
+
+    color:#0f9d58;
+}
+
+footer p{
+    line-height:1.6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .cuadricula_naturaleza{
+        grid-template-columns:repeat(2,1fr);
     }
-}
-@media (max-width: 600px) {
-    .cuadricula_naturaleza {
-        grid-template-columns: 1fr;
+
+    nav{
+        flex-direction:column;
+
+        padding:20px 0;
     }
+
+    .lista_navegacion{
+        flex-wrap:wrap;
+        justify-content:center;
+
+        margin-top:20px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .cuadricula_naturaleza{
+        grid-template-columns:1fr;
+    }
+
+    .titulo_seccion{
+        font-size:26px;
+    }
+
+    .menu1{
+        font-size:15px;
+    }
+
+    .logo3{
+        width:150px;
+    }
+
 }

@@ -1,154 +1,148 @@
-/* --- CONFIGURACIÓN DEL FONDO --- */
-#fondo_portada {  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Tahoma', sans-serif;
-}
+/* ==========================================
+   ESTILOS DE LA PÁGINA DE CREADORES
+   ========================================== */
 
-/* --- NAVEGACIÓN --- */
-header {
-    top: 0; 
-    width: 100%; 
-    background-color: rgb(255, 255, 255, 0.0); 
-    position: static; 
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo2 {
-    position: absolute;
-    top: 5px;
-    left: 50px;
-    width: 190px;
-    height: 100px;
-    z-index: 5;
-}
-
-/* --- CONTENEDOR PRINCIPAL --- */
-#contenedor_icono {
-    padding-top: 50px; 
-    padding-bottom: 100px; 
-}
-
-.creadores {
+/* Contenedor Base de la Sección */
+.seccion-creadores {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
 }
 
-.creadores h1 {
+/* Título Principal */
+.seccion-creadores h1 {
+    color: #1e4620; /* Verde bosque profundo */
+    font-family: 'Bodoni Moda', serif;
     font-size: 3rem;
-    color: #fff;
-    margin-bottom: 40px;
-    letter-spacing: 15px; 
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-}
-
-/* --- GRID DE TARJETAS (Optimizado para 5 personas) --- */
-.contenedor-tarjetas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px; 
-    width: 95%;
-    max-width: 1300px;
-    justify-items: center;
-}
-
-/* --- ESTILO DE LAS TARJETAS (Efecto Cristal) --- */
-.jon, .pao, .marco, .charlie, .cris {
-    background: rgba(255, 255, 255, 0.15); 
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 30px 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-/* --- ICONOS CIRCULARES --- */
-.icono-usuario {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #2e7d32, #1b5e20);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #fff;
-    border: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-/* --- TEXTOS DENTRO DE LAS TARJETAS --- */
-.creadores h2 {
-    font-size: 1.1rem;
-    color: #fff;
-    margin: 10px 0;
-    text-align: center;
-    min-height: 50px; 
-}
-
-.carne {
-    font-size: 0.9rem;
-    color: #a5d6a7; 
-    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
-/* --- EFECTOS HOVER (Bordes de colores) --- */
-.jon:hover { border-color: #2e7d32; transform: translateY(-5px); }
-.pao:hover { border-color: #9024ca; transform: translateY(-5px); }
-.marco:hover { border-color: #e04542; transform: translateY(-5px); }
-.charlie:hover { border-color: #27eeea; transform: translateY(-5px); }
-.cris:hover { border-color: #d8f424; transform: translateY(-5px); }
+/* Subtítulo */
+.seccion-creadores .subtitulo {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
 
-/* --- FOOTER --- */
-footer {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+/* Red de Tarjetas usando Grid (Súper alineado) */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Tarjeta Individual Estilo Minimalista Académico */
+.tarjeta-usuario {
+    background-color: #ffffff;
+    border: 1px solid #e2ebe2;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 100%;
+}
+
+/* Animación sutil al pasar el mouse */
+.tarjeta-usuario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(30, 70, 32, 0.1);
+    border-color: #a5d6a7;
+}
+
+/* Círculo del Icono */
+.icono-usuario {
+    width: 80px;
+    height: 80px;
+    background-color: #f4f8f4; /* Fondo verde muy suave */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.icono-usuario i {
+    font-size: 2rem;
+    color: #2e7d32; /* Icono verde */
+}
+
+.tarjeta-usuario:hover .icono-usuario {
+    background-color: #2e7d32;
+}
+
+.tarjeta-usuario:hover .icono-usuario i {
+    color: #ffffff;
+}
+
+/* Nombres de los integrantes */
+.tarjeta-usuario h2 {
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Roles */
+.tarjeta-usuario .rol {
+    font-size: 0.9rem;
+    color: #2e7d32;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+/* Carné de la universidad */
+.tarjeta-usuario .carne {
+    font-size: 0.95rem;
+    color: #777777;
+    background-color: #f5f5f5;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-family: monospace;
+}
+
+/* ==========================================
+   ESTILOS GENERALES DEL FOOTER
+   ========================================== */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2ebe2;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
 }
 
 .footer-redes a {
-    font-size: 1.5rem;
-    margin: 0 10px;
     color: #2e7d32;
-    transition: color 0.3s;
+    font-size: 1.5rem;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-redes a:hover {
-    color: #1b5e20;
+    color: #1e4620;
+    transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-    .creadores h1 {
-        font-size: 2rem;
-        letter-spacing: 5px;
-        margin-bottom: 25px;
-    }
-    
-    .contenedor-tarjetas {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .creadores h2 {
-        min-height: auto;
-    }
+footer p {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.6;
 }

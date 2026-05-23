@@ -1,35 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css\inicio.css">
-    <link rel="stylesheet" href="css/deportes.css">
-    <!--libreria de iconos-->
-    <link rel="stylesheet" href="https://cloudflare.com">
-    <title>Parque de Aventuras Surf City Walter Thilo Deininger</title>
+    <link rel="stylesheet" href="css\deportes.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Deportes Extremos</title>
 </head>
-<!---Grupo de trabajo: 
-    -jonathan solis SC262227
-    -Paola Valdéz VR261803
-    -Marcos ayala AP260351
-    -Carlos Azucena AA260854-->
 
 <body id="fondo_portada">
 
-    <!-- Menú de Navegacion -->
     <header>
-        <nav>   
-            <img src="img\iconosurfcity3.png" class="logo">       
-            
-            <input type="checkbox" id="verificacion_menu">
-            <label for="verificacion_menu" class="boton_menu">
-                <span class="linea_hamburguesa"></span>
-                <span class="linea_hamburguesa"></span>
-                <span class="linea_hamburguesa"></span>
-            </label>
-            
-            <ul class="lista_navegacion">
+        <nav>    
+            <img src="img/Negativo con texto.png" class="logo2" alt="Logo Parque">       
+            <ul>
                 <li><a class="menu1" href="index.html"> Inicio</a></li>
                 <li><a class="menu1" href="acerca_de.html"> Historia</a></li>
                 <li><a class="menu1" href="flora_fauna.html"> flora y fauna</a></li>
@@ -38,122 +26,98 @@
                 <li><a class="menu1" href="contactos.html"> Contactos</a></li>
                 <li><a class="menu1" href="tienda.html"> Tienda</a></li>
                 <li><a class="menu1" href="creadores.html"> Creadores</a></li>
+                
             </ul>
         </nav>
     </header>
-    
-    <br>
-    <section>
-        <main class="bloque_principal">
-            
-            <section class="bloque_seccion">
-                <br>
-                <h2 class="titulo_seccion"><i class="fa-solid fa-person-running"></i> Deportes Extremos y Aventura</h2>
-                <div class="cuadricula_deportes">
-                    
-                    <div class="tarjeta_deporte">
-                        <div class="cuadro_foto_cuadrado">
-                            <img src="img/rapel.jpg" alt="Canopy">
-                            <span class="etiqueta_actividad aventura">Canopy</span>
-                        </div>
-                        <div class="datos_tarjeta">
-                            <h3>Canopy (Tirolesa)</h3>
-                            <p class="tipo_actividad">Aventura en Altura</p>
-                            <p class="descripcion">Cruza los cielos del parque deslizándote por cables a gran altura con una vista espectacular del bosque.</p>
-                            <a href="#bio1" class="boton_agrandar">Ampliar Imagen <i class="fa-solid fa-expand"></i></a>
-                        </div>
-                    </div>
 
-                    <div class="tarjeta_deporte">
-                        <div class="cuadro_foto_cuadrado">
-                            <img src="img/rapel2.jpg" alt="Rappel">
-                            <span class="etiqueta_actividad extremo">Rappel</span>
-                        </div>
-                        <div class="datos_tarjeta">
-                            <h3>Rappel Extremo</h3>
-                            <p class="tipo_actividad">Descenso Vertical</p>
-                            <p class="descripcion">Desciende de forma segura por imponentes paredes de roca natural poniendo a prueba tu adrenalina.</p>
-                            <a href="#bio2" class="boton_agrandar">Ampliar Imagen <i class="fa-solid fa-expand"></i></a>
-                        </div>
-                    </div>
+    <main class="contenedor_deportes">
 
-                    <div class="tarjeta_deporte">
-                        <div class="cuadro_foto_cuadrado">
-                            <img src="img/escalar1.jpg" alt="Escalada">
-                            <span class="etiqueta_actividad extremo">Escalada</span>
-                        </div>
-                        <div class="datos_tarjeta">
-                            <h3>Escalada en Roca</h3>
-                            <p class="tipo_actividad">Fuerza y Destreza</p>
-                            <p class="descripcion">Supera desafíos verticales ascendiendo por rutas diseñadas en las estructuras rocosas del parque.</p>
-                            <a href="#bio3" class="boton_agrandar">Ampliar Imagen <i class="fa-solid fa-expand"></i></a>
-                        </div>
-                    </div>
+        <section class="portada_deportes">
 
-                    <div class="tarjeta_deporte">
-                        <div class="cuadro_foto_cuadrado">
-                            <img src="img/ciclismo.jpg" alt="Ciclismo">
-                            <span class="etiqueta_actividad deporte">Ciclismo</span>
-                        </div>
-                        <div class="datos_tarjeta">
-                            <h3>Ciclismo de Montaña</h3>
-                            <p class="tipo_actividad">Rutas Técnicas</p>
-                            <p class="descripcion">Recorre senderos técnicos y pistas naturales demandantes en medio de la densa vegetación tropical.</p>
-                            <a href="#bio4" class="boton_agrandar">Ampliar Imagen <i class="fa-solid fa-expand"></i></a>
-                        </div>
-                    </div>
+            <h1>Deportes Extremos</h1>
 
-                    <div class="tarjeta_deporte">
-                        <div class="cuadro_foto_cuadrado">
-                            <img src="img/guia1.jpg" alt="Senderismo">
-                            <span class="etiqueta_actividad caminatas">Caminatas</span>
-                        </div>
-                        <div class="datos_tarjeta">
-                            <h3>Caminatas y Senderismo</h3>
-                            <p class="tipo_actividad">Exploración</p>
-                            <p class="descripcion">Explora rutas con diferentes niveles de dificultad que te llevarán hasta miradores con vistas al Pacífico.</p>
-                            <a href="#bio5" class="boton_agrandar">Ampliar Imagen <i class="fa-solid fa-expand"></i></a>
-                        </div>
-                    </div>
+            <p>
+                Vive una experiencia llena de adrenalina, naturaleza y aventura                
+                dentro del
+                <br> 
+                Parque Walter Thilo Deininger.
+            </p>
 
-                    <div class="tarjeta_deporte">
-                        <div class="cuadro_foto_cuadrado">
-                            <img src="img/camping.jpg" alt="Camping">
-                            <span class="etiqueta_actividad camping">Camping</span>
-                        </div>
-                        <div class="datos_tarjeta">
-                            <h3>Camping y Picnic</h3>
-                            <p class="tipo_actividad">Al Aire Libre</p>
-                            <p class="descripcion">Disfruta de una noche bajo las estrellas acampando de forma segura en las zonas asignadas del parque.</p>
-                            <a href="#bio6" class="boton_agrandar">Ampliar Imagen <i class="fa-solid fa-expand"></i></a>
-                        </div>
-                    </div>
+        </section>
 
-                </div>
-            </section>
+        <section class="contenedor_tarjetas">
 
-        </main>
+            <div class="tarjeta_deporte">
 
-<!-- VENTANAS PARA AMPLIAR LAS FOTOS -->
-        <div id="bio1" class="pantalla_completa"><a href="#!" class="boton_cerrar">×</a><img src="img/canopy.jpg"></div>
-        <div id="bio2" class="pantalla_completa"><a href="#!" class="boton_cerrar">×</a><img src="img/rappel.jpg"></div>
-        <div id="bio3" class="pantalla_completa"><a href="#!" class="boton_cerrar">×</a><img src="img/escalada.jpg"></div>
-        <div id="bio4" class="pantalla_completa"><a href="#!" class="boton_cerrar">×</a><img src="img/ciclismo.jpg"></div>
-        <div id="bio5" class="pantalla_completa"><a href="#!" class="boton_cerrar">×</a><img src="img/senderismo.jpg"></div>
-        <div id="bio6" class="pantalla_completa"><a href="#!" class="boton_cerrar">×</a><img src="img/camping.jpg"></div>
-    </section>
+                <img src="img\Gemini_Generated_Image_7mofw97mofw97mof.png" alt="Canopy">
 
-    <!-- aqui va el footer -->
+                <h2>Canopy</h2>
+
+                <p>
+                    Deslízate entre árboles y disfruta la velocidad
+                    mientras observas increíbles paisajes naturales.
+                </p>
+
+            </div>
+
+            <div class="tarjeta_deporte">
+
+                <img src="img\senderismogemy.png" alt="Senderismo">
+
+                <h2>Senderismo</h2>
+
+                <p>
+                    Recorre rutas naturales rodeadas de flora y fauna
+                    mientras exploras el bosque tropical.
+                </p>
+
+            </div>
+
+            <div class="tarjeta_deporte">
+
+                <img src="img\RAPEL.png" alt="Escalada">
+
+                <h2>Rapel</h2>
+
+                <p>
+                    Pon a prueba tu resistencia y habilidad en zonas
+                    preparadas para actividades extremas.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="info_extra">
+
+            <h2>¿Qué necesitas para participar?</h2>
+
+            <ul>
+                <li>Ropa cómoda</li>
+                <li>Zapatos deportivos</li>
+                <li>Agua</li>
+                <li>Y las ganas de ir</li>
+            </ul>
+
+        </section>
+
+    </main>
+
     <footer>
-    <div class="footer-redes">
-        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. <br> 
-       Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web</p>
-</footer>
-    
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/parquewtd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/parquewtd/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/surfcity" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/@surfcity" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <p>
+            &copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger.
+            <br> 
+            Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web
+        </p>
+    </footer>
+
 </body>
 </html>

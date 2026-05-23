@@ -1,4 +1,26 @@
 #fondo_portada{  
+<<<<<<< HEAD
+    width:100%; /* Hace que el body ocupe todo el ancho */
+    overflow-x:hidden; /* Evita el scroll horizontal */
+    font-family:'Tahoma', sans-serif; /* Fuente principal */
+    background:#f5f7f2; /* Color de fondo general */
+
+   background-image:url("../img/fondo5.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    
+}
+header {
+    top: 0; /* top: 0: Pega el elemento exactamente al borde superior de la ventana */
+    width: 100%; /* width: 100%: Hace que el menú ocupe todo el ancho horizontal de la pantalla */
+    background:rgb(239, 239, 229); /* Fondo blanco */
+    /*position: fixed; /*te va a seguir la barra de navegacion al bajar*/
+    position: static; /*te va a seguir la barra de navegacion al bajar*/
+    /*z-index: 1000; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+    /*z-index: 10; /* Asegura que el menú siempre esté por encima de cualquier otro elemento */
+=======
     background-color: white;
 }
 header {
@@ -6,6 +28,7 @@ header {
     width: 100%; 
     background-color: rgba(255, 255, 255, 0.7); 
     position: static; 
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
 }
 
 .logo2{
@@ -56,6 +79,31 @@ ul {
     padding: 40px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     max-width: 80%;
+<<<<<<< HEAD
+    margin: 50px auto; /* Centra la tarjeta y le da aire arriba/abajo */
+    color: #333; /* Texto oscuro para lectura fácil */
+}
+/* FOOTER */
+footer{
+    background:#d9d9d9;
+    padding:20px;
+    text-align:center;
+    color:rgb(7,87,7);
+}
+
+.footer-redes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:10px;
+}
+
+.footer-redes a{
+    color:rgb(7,87,7);
+    text-decoration:none;
+}
+=======
     margin: 50px auto; 
     color: #333; 
 }
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d

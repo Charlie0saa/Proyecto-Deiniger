@@ -56,7 +56,13 @@ nav li{
 }
 
 nav a:hover{
+<<<<<<< HEAD
+
+    color:rgb(208,231,4); /* Cambia color al pasar mouse */
+
+=======
     color:rgb(225,208,133); 
+>>>>>>> ac847b8c589aa569981b7888c9d7ba087c75a40d
 }
 
 #verificacion_menu, .boton_menu {
