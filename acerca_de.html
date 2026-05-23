@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Corregidas rutas con / -->
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/acercade.css">
-    
-    <!-- Libreria de iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Parque de Aventuras Surf City Walter Thilo Deininger</title>
 </head>
 
 <body id="fondo_portada">
 
-    <!-- Menú de Navegacion -->
     <header>
         <nav>   
             <img src="img\iconosurfcity3.png" class="logo">       
-            <!--  boton de hamburguesa -->
-            <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="btn-menu">
-                <i class="fa-solid fa-bars"></i>
+            
+            <input type="checkbox" id="verificacion_menu">
+            <label for="verificacion_menu" class="boton_menu">
+                <span class="linea_hamburguesa"></span>
+                <span class="linea_hamburguesa"></span>
+                <span class="linea_hamburguesa"></span>
             </label>
-            <ul>
+            
+            <ul class="lista_navegacion">
                 <li><a class="menu1" href="index.html"> Inicio</a></li>
                 <li><a class="menu1" href="acerca_de.html"> Historia</a></li>
                 <li><a class="menu1" href="flora_fauna.html"> flora y fauna</a></li>
@@ -36,7 +34,6 @@
         </nav>
     </header>
 
-    <!-- Seccion Principal -->
     <main id="contenedor_icono">
         <section class="tarjeta_historia">
             <h1 class="estilo_titulos">Historia del parque</h1>
@@ -58,7 +55,7 @@
                 <p><em>(Hay una parte del parque que no es explorada por respeto a los reptiles y animales salvajes).</em></p>
                 
                 <p><strong>Actividades Turísticas:</strong></p>
-                <ul> <!-- Añadida etiqueta de apertura faltante -->
+                <ul> 
                     <li>Senderismo caminatas en diferentes niveles</li>
                     <li>Canopy (tirolesa)</li>
                     <li>Rappel y escalada</li>
@@ -82,17 +79,16 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-    <div class="footer-redes">
-        <a href="https://www.instagram.com/parquewtd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/parquewtd/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://x.com/surfcity" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.tiktok.com/@surfcity" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. <br> 
-       Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web</p>
-</footer>
+        <div class="footer_redes">
+            <a href="https://www.instagram.com/parquewtd/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/parquewtd/?locale=es_LA" target="_blank">Facebook</a>
+            <a href="https://x.com/surfcity" target="_blank">Twitter</a>
+            <a href="https://www.tiktok.com/@surfcity" target="_blank">TikTok</a>
+        </div>
+        <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. <br> 
+           Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web</p>
+    </footer>
     
 </body>
 </html>

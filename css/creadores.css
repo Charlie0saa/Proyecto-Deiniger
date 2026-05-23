@@ -1,6 +1,5 @@
 /* --- CONFIGURACIÓN DEL FONDO --- */
 #fondo_portada {  
-    /* Se agrega un degradado oscuro para que el texto blanco siempre sea legible */
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/portada.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,14 +48,13 @@ header {
     font-size: 3rem;
     color: #fff;
     margin-bottom: 40px;
-    letter-spacing: 15px; /* Ajustado para que no se salga en pantallas pequeñas */
+    letter-spacing: 15px; 
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 /* --- GRID DE TARJETAS (Optimizado para 5 personas) --- */
 .contenedor-tarjetas {
     display: grid;
-    /* Esto acomoda las tarjetas automáticamente según el ancho de la pantalla */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px; 
     width: 95%;
@@ -102,7 +100,7 @@ header {
     color: #fff;
     margin: 10px 0;
     text-align: center;
-    min-height: 50px; /* Alinea los nombres aunque unos sean más largos */
+    min-height: 50px; 
 }
 
 .carne {
@@ -136,4 +134,21 @@ footer {
 
 .footer-redes a:hover {
     color: #1b5e20;
+}
+
+@media screen and (max-width: 768px) {
+    .creadores h1 {
+        font-size: 2rem;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+    }
+    
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .creadores h2 {
+        min-height: auto;
+    }
 }

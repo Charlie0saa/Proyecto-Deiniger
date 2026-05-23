@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/carrito_estilos.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>Carrito de Compras - Parque Walter Thilo Deininger</title>
+</head>
+
+<body id="fondo_portada">
+    <header>
+        <nav>   
+            <img src="img\iconosurfcity3.png" class="logo">       
+            
+            <input type="checkbox" id="verificacion_menu">
+            <label for="verificacion_menu" class="boton_menu">
+                <span class="linea_hamburguesa"></span>
+                <span class="linea_hamburguesa"></span>
+                <span class="linea_hamburguesa"></span>
+            </label>
+            
+            <ul class="lista_navegacion">
+                <li><a class="menu1" href="index.html"> Inicio</a></li>
+                <li><a class="menu1" href="acerca_de.html"> Historia</a></li>
+                <li><a class="menu1" href="flora_fauna.html"> flora y fauna</a></li>
+                <li><a class="menu1" href="deportes extremos.html"> Deportes Extremos</a></li>
+                <li><a class="menu1" href="galeria.html"> Galeria</a></li>
+                <li><a class="menu1" href="contactos.html"> Contactos</a></li>
+                <li><a class="menu1" href="tienda.html"> Tienda</a></li>
+                <li><a class="menu1" href="creadores.html"> Creadores</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main id="contenedor_icono">
+        <section class="seccion_carrito">
+            <h1 class="titulo_carrito">Tu Carrito de Compras</h1>
+            
+            <div class="contenedor_tabla_carrito">
+                <table class="tabla_carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="celda_producto">
+                                    <div class="mini_foto" id="mini_1"></div>
+                                    <span>Camiseta de Senderismo WTD</span>
+                                </div>
+                            </td>
+                            <td>$15.00</td>
+                            <td>1</td>
+                            <td>$15.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="celda_producto">
+                                    <div class="mini_foto" id="mini_2"></div>
+                                    <span>Gorra Oficial Aventurero</span>
+                                </div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>1</td>
+                            <td>$10.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="contenedor_resumen_pago">
+                <div class="cuadro_resumen">
+                    <h3>Resumen de Compra</h3>
+                    <div class="fila_resumen">
+                        <span>Subtotal:</span>
+                        <span>$25.00</span>
+                    </div>
+                    <div class="fila_resumen">
+                        <span>IVA (13%):</span>
+                        <span>$3.25</span>
+                    </div>
+                    <hr class="linea_division">
+                    <div class="fila_resumen total_pago">
+                        <span>Total General:</span>
+                        <span>$28.25</span>
+                    </div>
+                    <button class="boton_pagar" type="button">Proceder al Pago</button>
+                    <a href="tienda.html" class="enlace_regresar">Seguir Comprando</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_redes">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://x.com" target="_blank">Twitter</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+        </div>
+        <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. <br> Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web</p>
+    </footer>
+</body>
+</html>

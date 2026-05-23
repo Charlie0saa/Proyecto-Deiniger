@@ -1,11 +1,11 @@
 /* Estilos del Contenedor Principal */
 .contenedor_formulario {
-    background-color: #02412e; /* Gris verdoso oscuro */
+    background-color: #02412e; 
     padding: 40px;
     border-radius: 20px;
     width: 100%;
     max-width: 450px;
-    margin: 0 auto; /* Centra el contenedor en la página */
+    margin: 0 auto; 
     color: white;
     font-family: sans-serif;
     margin-top: 15%;
@@ -24,12 +24,12 @@
     border-radius: 30px;
     padding: 5px 15px;
     margin-bottom: 20px;
-    border: 2px solid #0019a7; /* Borde azul claro */
+    border: 2px solid #0019a7; 
 }
 
 /* TAMAÑO DE LOS ICONOS (Ajustado) */
 .icono_campo {
-    width: 22px;  /* Tamaño controlado para que no se vean grandes */
+    width: 22px;  
     height: 22px;
     margin-right: 10px;
     object-fit: contain;
@@ -47,7 +47,7 @@
 
 .grupo_textarea {
     border-radius: 20px;
-    align-items: flex-start; /* Alinea el icono arriba en el textarea */
+    align-items: flex-start; 
     padding-top: 10px;
 }
 

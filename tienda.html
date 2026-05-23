@@ -17,12 +17,23 @@
 <header>
         <nav>   
             <img src="img\iconosurfcity3.png" class="logo">       
-            <!--  boton de hamburguesa -->
-            <input type="checkbox" id="check-menu">
-            <label for="check-menu" class="btn-menu">
-                <i class="fa-solid fa-bars"></i>
+            
+            <a href="carrito.html" class="enlace_carrito_flotante">
+                <!-- Dibujo SVG nativo del carrito en color verde para que cargue sin librerías externas -->
+                <svg class="icono_carrito_svg" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org" style="width: 30px; height: 30px;">
+                    <path d="M6.29999 5H21L19 14H7.29999L5.12 3.11M7.29999 14L5.89 21H3M11 21C11 21.5523 10.5523 22 10 22C9.44772 22 9 21.5523 9 21C9 20.4477 9.44772 20 10 20C10.5523 20 11 20.4477 11 21ZM19 21C19 21.5523 18.5523 22 18 22C17.4477 22 17 21.5523 17 21C17 20.4477 17.4477 20 18 20C18.5523 20 19 20.4477 19 21Z" stroke="rgb(7,87,7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="contador_carrito" id="numero_contador">0</span>
+            </a>
+
+            <input type="checkbox" id="verificacion_menu">
+            <label for="verificacion_menu" class="boton_menu">
+                <span class="linea_hamburguesa"></span>
+                <span class="linea_hamburguesa"></span>
+                <span class="linea_hamburguesa"></span>
             </label>
-            <ul>
+            
+            <ul class="lista_navegacion">
                 <li><a class="menu1" href="index.html"> Inicio</a></li>
                 <li><a class="menu1" href="acerca_de.html"> Historia</a></li>
                 <li><a class="menu1" href="flora_fauna.html"> flora y fauna</a></li>
@@ -33,7 +44,7 @@
                 <li><a class="menu1" href="creadores.html"> Creadores</a></li>
             </ul>
         </nav>
-    </header>
+    </header>   
 
     <main id="contenedor_icono"></main>
     <br>
@@ -41,75 +52,75 @@
     <section>
         <div class="contenedor_tienda">
             
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod1"><div class="foto_producto" id="regalo_1"></div></a>
                 <div class="info_producto">
                     <h3>Camiseta de Senderismo WTD</h3>
                     <p class="precio_producto">$15.00</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod2"><div class="foto_producto" id="regalo_2"></div></a>
                 <div class="info_producto">
                     <h3>Gorra Oficial Aventurero</h3>
                     <p class="precio_producto">$10.00</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod3"><div class="foto_producto" id="regalo_3"></div></a>
                 <div class="info_producto">
                     <h3>Termo Metálico Surf City</h3>
                     <p class="precio_producto">$18.00</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod4"><div class="foto_producto" id="regalo_4"></div></a>
                 <div class="info_producto">
                     <h3>Llavero de Madera Torogoz</h3>
                     <p class="precio_producto">$4.00</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod5"><div class="foto_producto" id="regalo_5"></div></a>
                 <div class="info_producto">
                     <h3>Taza Cueva del Misterio</h3>
                     <p class="precio_producto">$6.50</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod6"><div class="foto_producto" id="regalo_6"></div></a>
                 <div class="info_producto">
                     <h3>Café Gourmet de Altura</h3>
                     <p class="precio_producto">$12.00</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod7"><div class="foto_producto" id="regalo_7"></div></a>
                 <div class="info_producto">
                     <h3>Pulseras Artesanales</h3>
                     <p class="precio_producto">$3.50</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
-            <div class="tarjeta_producto">
+            <div class="tarjeta_producto tarjeta_foto">
                 <a href="#prod8"><div class="foto_producto" id="regalo_8"></div></a>
                 <div class="info_producto">
                     <h3>Imán Mirador al Pacífico</h3>
                     <p class="precio_producto">$5.00</p>
-                    <button class="btn_carrito"><i class="fa-solid fa-cart-shopping"></i> Añadir al carrito</button>
+                    <button class="btn_carrito">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -127,12 +138,25 @@
 
     <footer>
         <div class="footer-redes">
-            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://x.com" target="_blank">Twitter</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
         </div>
         <p>&copy; 2026 Sitio Turístico Parque de aventuras surf city walter thilo deininger. <br> Todos los derechos reservados. Proyecto Lenguaje y Marcado de Diseño Web</p>
     </footer>
+
+    <script>
+        let cantidad_productos = 0;
+        const numero_burbuja = document.getElementById('numero_contador');
+        const botones_compra = document.querySelectorAll('.btn_carrito');
+
+        botones_compra.forEach(function(boton) {
+            boton.addEventListener('click', function() {
+                cantidad_productos = cantidad_productos + 1;
+                numero_burbuja.textContent = cantidad_productos;
+            });
+        });
+    </script>
 </body>
 </html>
